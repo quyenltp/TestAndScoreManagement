@@ -1,0 +1,14 @@
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\bin\Debug\PlayerUI.exe.config
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\bin\Debug\PlayerUI.exe
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\bin\Debug\PlayerUI.pdb
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.csproj.AssemblyReference.cache
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.csproj.SuggestedBindingRedirects.cache
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.MainForm.resources
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.ChamThi.resources
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.SoanCauHoi.resources
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.SoanDeThi.resources
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\PlayerUI.Properties.Resources.resources
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.csproj.GenerateResource.cache
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\TestAndScore.csproj.CoreCompileInputs.cache
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\PlayerUI.exe
+C:\Users\camap\OneDrive\Documents\GitHub\Modern-Media-Player-UI-C-Sharp\PlayerUI\obj\Debug\PlayerUI.pdb
