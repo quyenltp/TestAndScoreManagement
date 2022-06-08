@@ -16,6 +16,7 @@ namespace TestAndScore
         {
             InitializeComponent();
             hideSubMenu();
+            openChildForm(new TrangChu());
         }
 
         private void hideSubMenu()
@@ -73,10 +74,22 @@ namespace TestAndScore
 
         private void btnChamThi_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
-            hideSubMenu();
+            openChildForm(new ChamThi());
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            openChildForm(new BaoCaoNam());
+        }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DSDeThi());
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TrangChu());
         }
     }
 }

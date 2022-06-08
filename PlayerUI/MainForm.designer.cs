@@ -41,9 +41,12 @@
             this.btnSoan = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.panelSoanThao.SuspendLayout();
+            this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -76,7 +79,7 @@
             this.btnCaiDat.ForeColor = System.Drawing.Color.Black;
             this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
             this.btnCaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaiDat.Location = new System.Drawing.Point(0, 397);
+            this.btnCaiDat.Location = new System.Drawing.Point(0, 390);
             this.btnCaiDat.Name = "btnCaiDat";
             this.btnCaiDat.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnCaiDat.Size = new System.Drawing.Size(250, 45);
@@ -119,15 +122,16 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.Black;
             this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 352);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 345);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnThongKe.Size = new System.Drawing.Size(250, 45);
             this.btnThongKe.TabIndex = 8;
-            this.btnThongKe.Text = "Thống Kê";
+            this.btnThongKe.Text = "Báo Cáo Năm";
             this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnTraCuu
             // 
@@ -140,7 +144,7 @@
             this.btnTraCuu.ForeColor = System.Drawing.Color.Black;
             this.btnTraCuu.Image = ((System.Drawing.Image)(resources.GetObject("btnTraCuu.Image")));
             this.btnTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraCuu.Location = new System.Drawing.Point(0, 307);
+            this.btnTraCuu.Location = new System.Drawing.Point(0, 300);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTraCuu.Size = new System.Drawing.Size(250, 45);
@@ -149,6 +153,7 @@
             this.btnTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTraCuu.UseVisualStyleBackColor = true;
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
             // 
             // btnChamThi
             // 
@@ -161,7 +166,7 @@
             this.btnChamThi.ForeColor = System.Drawing.Color.Black;
             this.btnChamThi.Image = ((System.Drawing.Image)(resources.GetObject("btnChamThi.Image")));
             this.btnChamThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChamThi.Location = new System.Drawing.Point(0, 262);
+            this.btnChamThi.Location = new System.Drawing.Point(0, 255);
             this.btnChamThi.Name = "btnChamThi";
             this.btnChamThi.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnChamThi.Size = new System.Drawing.Size(250, 45);
@@ -178,7 +183,7 @@
             this.panelSoanThao.Controls.Add(this.btn_SoanDeThi);
             this.panelSoanThao.Controls.Add(this.btnSoanCauHoi);
             this.panelSoanThao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSoanThao.Location = new System.Drawing.Point(0, 182);
+            this.panelSoanThao.Location = new System.Drawing.Point(0, 175);
             this.panelSoanThao.Name = "panelSoanThao";
             this.panelSoanThao.Size = new System.Drawing.Size(250, 80);
             this.panelSoanThao.TabIndex = 4;
@@ -232,7 +237,7 @@
             this.btnSoan.ForeColor = System.Drawing.Color.Black;
             this.btnSoan.Image = ((System.Drawing.Image)(resources.GetObject("btnSoan.Image")));
             this.btnSoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSoan.Location = new System.Drawing.Point(0, 137);
+            this.btnSoan.Location = new System.Drawing.Point(0, 130);
             this.btnSoan.Name = "btnSoan";
             this.btnSoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnSoan.Size = new System.Drawing.Size(250, 45);
@@ -254,7 +259,7 @@
             this.btnTrangChu.ForeColor = System.Drawing.Color.Black;
             this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
             this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 92);
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 85);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTrangChu.Size = new System.Drawing.Size(250, 45);
@@ -263,14 +268,40 @@
             this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrangChu.UseVisualStyleBackColor = true;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // panelLogo
             // 
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelLogo.Controls.Add(this.label2);
+            this.panelLogo.Controls.Add(this.label1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 92);
+            this.panelLogo.Size = new System.Drawing.Size(250, 85);
             this.panelLogo.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(245, 26);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Việc Ra Đề và Chấm Thi";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Quản Lý";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelChildForm
             // 
@@ -297,6 +328,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panelSideMenu.ResumeLayout(false);
             this.panelSoanThao.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -304,7 +337,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Button btnTrangChu;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnTraCuu;
         private System.Windows.Forms.Button btnChamThi;
@@ -316,6 +348,9 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button btnCaiDat;
+        private System.Windows.Forms.Button btnTrangChu;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

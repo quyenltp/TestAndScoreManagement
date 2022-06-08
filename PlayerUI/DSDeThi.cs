@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace TestAndScore
 {
-    public partial class SoanDeThi : Form
+    public partial class DSDeThi : Form
     {
-        public SoanDeThi()
+        public DSDeThi()
         {
             InitializeComponent();
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
     }
-
 }

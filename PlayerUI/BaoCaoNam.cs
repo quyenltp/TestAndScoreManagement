@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace TestAndScore
 {
-    public partial class SoanDeThi : Form
+    public partial class BaoCaoNam : Form
     {
-        public SoanDeThi()
+        public BaoCaoNam()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void BaoCaoNam_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
-
     }
-
 }
