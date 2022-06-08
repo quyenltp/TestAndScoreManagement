@@ -56,12 +56,17 @@
     <Compile Include="BaoCaoNam.Designer.cs">
       <DependentUpon>BaoCaoNam.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomComboBox.cs" />
     <Compile Include="DSDeThi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DSDeThi.Designer.cs">
       <DependentUpon>DSDeThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -100,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DSDeThi.resx">
       <DependentUpon>DSDeThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -141,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

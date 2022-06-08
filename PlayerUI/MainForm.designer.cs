@@ -326,6 +326,7 @@
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản lý việc ra đề và chấm thi của giảng viên";
             this.panelSideMenu.ResumeLayout(false);
             this.panelSoanThao.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);

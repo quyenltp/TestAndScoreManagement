@@ -35,12 +35,12 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.label1.Location = new System.Drawing.Point(177, 25);
+            this.label1.Location = new System.Drawing.Point(141, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 36);
+            this.label1.Size = new System.Drawing.Size(403, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kết Quả Chấm Thi";
             // 
@@ -77,11 +77,11 @@
             // customTextBox1
             // 
             this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.customTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
             this.customTextBox1.BorderRadius = 0;
             this.customTextBox1.BorderSize = 2;
-            this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
             this.customTextBox1.Location = new System.Drawing.Point(184, 75);
             this.customTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -91,7 +91,7 @@
             this.customTextBox1.PasswordChar = false;
             this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox1.PlaceholderText = "";
-            this.customTextBox1.Size = new System.Drawing.Size(250, 35);
+            this.customTextBox1.Size = new System.Drawing.Size(271, 37);
             this.customTextBox1.TabIndex = 5;
             this.customTextBox1.Texts = "";
             this.customTextBox1.UnderlinedStyle = false;
@@ -99,11 +99,11 @@
             // customTextBox2
             // 
             this.customTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.customTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.customTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.customTextBox2.BorderRadius = 0;
             this.customTextBox2.BorderSize = 2;
-            this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.customTextBox2.ForeColor = System.Drawing.Color.DimGray;
             this.customTextBox2.Location = new System.Drawing.Point(183, 118);
             this.customTextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -113,7 +113,7 @@
             this.customTextBox2.PasswordChar = false;
             this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox2.PlaceholderText = "";
-            this.customTextBox2.Size = new System.Drawing.Size(250, 35);
+            this.customTextBox2.Size = new System.Drawing.Size(272, 37);
             this.customTextBox2.TabIndex = 6;
             this.customTextBox2.Texts = "";
             this.customTextBox2.UnderlinedStyle = false;
@@ -121,11 +121,11 @@
             // customTextBox3
             // 
             this.customTextBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox3.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.customTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.customTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customTextBox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.customTextBox3.BorderRadius = 0;
             this.customTextBox3.BorderSize = 2;
-            this.customTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.customTextBox3.ForeColor = System.Drawing.Color.DimGray;
             this.customTextBox3.Location = new System.Drawing.Point(184, 162);
             this.customTextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -135,7 +135,7 @@
             this.customTextBox3.PasswordChar = false;
             this.customTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox3.PlaceholderText = "";
-            this.customTextBox3.Size = new System.Drawing.Size(250, 35);
+            this.customTextBox3.Size = new System.Drawing.Size(271, 37);
             this.customTextBox3.TabIndex = 7;
             this.customTextBox3.Texts = "";
             this.customTextBox3.UnderlinedStyle = false;
@@ -143,11 +143,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 226);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 210);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(659, 304);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 304);
             this.dataGridView1.TabIndex = 8;
             // 
             // ChamThi

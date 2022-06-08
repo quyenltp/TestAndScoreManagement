@@ -49,6 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.customComboBox1 = new CustomControls.CustomControls.CustomComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,12 +57,12 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.label1.Location = new System.Drawing.Point(245, 21);
+            this.label1.Location = new System.Drawing.Point(206, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 36);
+            this.label1.Size = new System.Drawing.Size(275, 55);
             this.label1.TabIndex = 7;
             this.label1.Text = "Soạn Đề Thi";
             // 
@@ -108,8 +109,8 @@
             // txtTenMonThi
             // 
             this.txtTenMonThi.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTenMonThi.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtTenMonThi.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTenMonThi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtTenMonThi.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtTenMonThi.BorderRadius = 0;
             this.txtTenMonThi.BorderSize = 2;
             this.txtTenMonThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -118,7 +119,7 @@
             this.txtTenMonThi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenMonThi.Multiline = false;
             this.txtTenMonThi.Name = "txtTenMonThi";
-            this.txtTenMonThi.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtTenMonThi.Padding = new System.Windows.Forms.Padding(7);
             this.txtTenMonThi.PasswordChar = false;
             this.txtTenMonThi.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenMonThi.PlaceholderText = "";
@@ -130,8 +131,8 @@
             // txtNamHoc
             // 
             this.txtNamHoc.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNamHoc.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtNamHoc.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtNamHoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtNamHoc.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtNamHoc.BorderRadius = 0;
             this.txtNamHoc.BorderSize = 2;
             this.txtNamHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -140,7 +141,7 @@
             this.txtNamHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNamHoc.Multiline = false;
             this.txtNamHoc.Name = "txtNamHoc";
-            this.txtNamHoc.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtNamHoc.Padding = new System.Windows.Forms.Padding(7);
             this.txtNamHoc.PasswordChar = false;
             this.txtNamHoc.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNamHoc.PlaceholderText = "";
@@ -152,8 +153,8 @@
             // txtThoiLuong
             // 
             this.txtThoiLuong.BackColor = System.Drawing.SystemColors.Window;
-            this.txtThoiLuong.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtThoiLuong.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtThoiLuong.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtThoiLuong.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtThoiLuong.BorderRadius = 0;
             this.txtThoiLuong.BorderSize = 2;
             this.txtThoiLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -162,7 +163,7 @@
             this.txtThoiLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtThoiLuong.Multiline = false;
             this.txtThoiLuong.Name = "txtThoiLuong";
-            this.txtThoiLuong.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtThoiLuong.Padding = new System.Windows.Forms.Padding(7);
             this.txtThoiLuong.PasswordChar = false;
             this.txtThoiLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtThoiLuong.PlaceholderText = "";
@@ -192,8 +193,8 @@
             // txtCH5
             // 
             this.txtCH5.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCH5.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtCH5.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtCH5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtCH5.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtCH5.BorderRadius = 0;
             this.txtCH5.BorderSize = 2;
             this.txtCH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -214,8 +215,8 @@
             // txtCH4
             // 
             this.txtCH4.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCH4.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtCH4.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtCH4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtCH4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtCH4.BorderRadius = 0;
             this.txtCH4.BorderSize = 2;
             this.txtCH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -236,8 +237,8 @@
             // txtCH3
             // 
             this.txtCH3.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCH3.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtCH3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtCH3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtCH3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtCH3.BorderRadius = 0;
             this.txtCH3.BorderSize = 2;
             this.txtCH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -258,8 +259,8 @@
             // txtCH2
             // 
             this.txtCH2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCH2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtCH2.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtCH2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtCH2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtCH2.BorderRadius = 0;
             this.txtCH2.BorderSize = 2;
             this.txtCH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -280,8 +281,8 @@
             // txtCH1
             // 
             this.txtCH1.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCH1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtCH1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtCH1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.txtCH1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
             this.txtCH1.BorderRadius = 0;
             this.txtCH1.BorderSize = 2;
             this.txtCH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -368,7 +369,26 @@
             this.label12.Size = new System.Drawing.Size(57, 22);
             this.label12.TabIndex = 29;
             this.label12.Text = "(phút)";
-          
+            // 
+            // customComboBox1
+            // 
+            this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.customComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox1.BorderSize = 1;
+            this.customComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.Location = new System.Drawing.Point(514, 82);
+            this.customComboBox1.MaximumSize = new System.Drawing.Size(125, 35);
+            this.customComboBox1.MinimumSize = new System.Drawing.Size(35, 35);
+            this.customComboBox1.Name = "customComboBox1";
+            this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.customComboBox1.Size = new System.Drawing.Size(125, 35);
+            this.customComboBox1.TabIndex = 30;
+            this.customComboBox1.Texts = "";
             // 
             // SoanDeThi
             // 
@@ -376,6 +396,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(668, 526);
+            this.Controls.Add(this.customComboBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
@@ -388,7 +409,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SoanDeThi";
             this.Text = "Soạn Đề Thi";
             this.panel1.ResumeLayout(false);
@@ -420,5 +441,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private CustomControls.CustomControls.CustomComboBox customComboBox1;
     }
 }
