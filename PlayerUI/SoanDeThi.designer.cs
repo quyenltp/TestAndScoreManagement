@@ -80,9 +80,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(26, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 22);
+            this.label2.Size = new System.Drawing.Size(110, 22);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Tên Môn Thi:";
+            this.label2.Text = "Tên môn thi:";
             // 
             // label3
             // 
@@ -90,9 +90,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(444, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 22);
+            this.label3.Size = new System.Drawing.Size(70, 22);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Học Kỳ:";
+            this.label3.Text = "Học kỳ:";
             // 
             // label4
             // 
@@ -100,19 +100,19 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(444, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.Size = new System.Drawing.Size(86, 22);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Năm Học:";
+            this.label4.Text = "Năm học:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 71);
+            this.label5.Location = new System.Drawing.Point(26, 113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 22);
+            this.label5.Size = new System.Drawing.Size(100, 22);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Thời Lượng";
+            this.label5.Text = "Thời lượng:";
             // 
             // txtTenMonThi
             // 
@@ -123,7 +123,7 @@
             this.txtTenMonThi.BorderSize = 2;
             this.txtTenMonThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenMonThi.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTenMonThi.Location = new System.Drawing.Point(161, 15);
+            this.txtTenMonThi.Location = new System.Drawing.Point(142, 15);
             this.txtTenMonThi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenMonThi.Multiline = false;
             this.txtTenMonThi.Name = "txtTenMonThi";
@@ -131,7 +131,7 @@
             this.txtTenMonThi.PasswordChar = false;
             this.txtTenMonThi.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTenMonThi.PlaceholderText = "";
-            this.txtTenMonThi.Size = new System.Drawing.Size(233, 35);
+            this.txtTenMonThi.Size = new System.Drawing.Size(247, 35);
             this.txtTenMonThi.TabIndex = 24;
             this.txtTenMonThi.Texts = "";
             this.txtTenMonThi.UnderlinedStyle = false;
@@ -145,7 +145,7 @@
             this.txtNamHoc.BorderSize = 2;
             this.txtNamHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtNamHoc.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNamHoc.Location = new System.Drawing.Point(539, 16);
+            this.txtNamHoc.Location = new System.Drawing.Point(527, 16);
             this.txtNamHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNamHoc.Multiline = false;
             this.txtNamHoc.Name = "txtNamHoc";
@@ -153,7 +153,7 @@
             this.txtNamHoc.PasswordChar = false;
             this.txtNamHoc.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNamHoc.PlaceholderText = "";
-            this.txtNamHoc.Size = new System.Drawing.Size(125, 35);
+            this.txtNamHoc.Size = new System.Drawing.Size(137, 35);
             this.txtNamHoc.TabIndex = 25;
             this.txtNamHoc.Texts = "";
             this.txtNamHoc.UnderlinedStyle = false;
@@ -167,7 +167,7 @@
             this.txtThoiLuong.BorderSize = 2;
             this.txtThoiLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtThoiLuong.ForeColor = System.Drawing.Color.DimGray;
-            this.txtThoiLuong.Location = new System.Drawing.Point(161, 58);
+            this.txtThoiLuong.Location = new System.Drawing.Point(142, 100);
             this.txtThoiLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtThoiLuong.Multiline = false;
             this.txtThoiLuong.Name = "txtThoiLuong";
@@ -175,7 +175,7 @@
             this.txtThoiLuong.PasswordChar = false;
             this.txtThoiLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtThoiLuong.PlaceholderText = "";
-            this.txtThoiLuong.Size = new System.Drawing.Size(170, 35);
+            this.txtThoiLuong.Size = new System.Drawing.Size(184, 35);
             this.txtThoiLuong.TabIndex = 26;
             this.txtThoiLuong.Texts = "";
             this.txtThoiLuong.UnderlinedStyle = false;
@@ -378,7 +378,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(337, 71);
+            this.label12.Location = new System.Drawing.Point(337, 113);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(57, 22);
             this.label12.TabIndex = 29;
@@ -393,14 +393,18 @@
             this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
             this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox1.Items.AddRange(new object[] {
+            "Học kỳ 1",
+            "Học kỳ 2",
+            "Học kỳ hè"});
             this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(539, 58);
-            this.customComboBox1.MaximumSize = new System.Drawing.Size(125, 35);
+            this.customComboBox1.Location = new System.Drawing.Point(527, 58);
+            this.customComboBox1.MaximumSize = new System.Drawing.Size(150, 35);
             this.customComboBox1.MinimumSize = new System.Drawing.Size(35, 35);
             this.customComboBox1.Name = "customComboBox1";
             this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox1.Size = new System.Drawing.Size(125, 35);
+            this.customComboBox1.Size = new System.Drawing.Size(137, 35);
             this.customComboBox1.TabIndex = 30;
             this.customComboBox1.Texts = "";
             // 
@@ -452,14 +456,17 @@
             this.customComboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox3.ForeColor = System.Drawing.Color.DimGray;
             this.customComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox3.Items.AddRange(new object[] {
+            "Lần 1",
+            "Lần 2"});
             this.customComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox3.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.Location = new System.Drawing.Point(539, 100);
-            this.customComboBox3.MaximumSize = new System.Drawing.Size(125, 35);
+            this.customComboBox3.Location = new System.Drawing.Point(527, 100);
+            this.customComboBox3.MaximumSize = new System.Drawing.Size(150, 35);
             this.customComboBox3.MinimumSize = new System.Drawing.Size(35, 35);
             this.customComboBox3.Name = "customComboBox3";
             this.customComboBox3.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox3.Size = new System.Drawing.Size(125, 35);
+            this.customComboBox3.Size = new System.Drawing.Size(137, 35);
             this.customComboBox3.TabIndex = 36;
             this.customComboBox3.Texts = "";
             // 
@@ -472,14 +479,17 @@
             this.customComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox2.ForeColor = System.Drawing.Color.DimGray;
             this.customComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox2.Items.AddRange(new object[] {
+            "Được sử dụng tài liệu",
+            "Không sử dụng tài liệu"});
             this.customComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.Location = new System.Drawing.Point(161, 100);
+            this.customComboBox2.Location = new System.Drawing.Point(142, 58);
             this.customComboBox2.MaximumSize = new System.Drawing.Size(500, 35);
             this.customComboBox2.MinimumSize = new System.Drawing.Size(50, 35);
             this.customComboBox2.Name = "customComboBox2";
             this.customComboBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox2.Size = new System.Drawing.Size(170, 35);
+            this.customComboBox2.Size = new System.Drawing.Size(247, 35);
             this.customComboBox2.TabIndex = 35;
             this.customComboBox2.Texts = "";
             // 
@@ -487,11 +497,11 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(26, 113);
+            this.label13.Location = new System.Drawing.Point(26, 71);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(129, 22);
+            this.label13.Size = new System.Drawing.Size(115, 22);
             this.label13.TabIndex = 33;
-            this.label13.Text = "Hình Thức Thi:";
+            this.label13.Text = "Hình thức thi:";
             // 
             // label14
             // 
@@ -499,9 +509,9 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(444, 113);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 22);
+            this.label14.Size = new System.Drawing.Size(69, 22);
             this.label14.TabIndex = 34;
-            this.label14.Text = "Lần Thi:";
+            this.label14.Text = "Lần thi:";
             // 
             // customButton2
             // 
