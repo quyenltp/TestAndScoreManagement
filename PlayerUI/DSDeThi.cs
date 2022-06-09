@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayerUI.CSDL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,43 @@ namespace TestAndScore
         public DSDeThi()
         {
             InitializeComponent();
+            FirstLoad();
+        }
+
+        DanhSachDeThi a = new DanhSachDeThi();
+
+        private void Check_Tuy_Chon()
+        {
+            if (radioButton_Tat_Ca.Checked == true) panel_Selection.Enabled = false;
+            else
+            {
+                panel_Selection.Enabled = true;
+            }
+        }
+
+        private void FirstLoad()
+        {
+            dtPicker_Ngay_Thi.Value = DateTime.Now;
+            cbx_Hinh_Thuc.SelectedIndex = cbx_Hoc_Ki.SelectedIndex = 0;
+            Check_Tuy_Chon();
+        }
+
+        private void radioButton_Tat_Ca_CheckedChanged(object sender, EventArgs e)
+        {
+            Check_Tuy_Chon();
+        }
+
+        private void customBtn_Tra_Cuu_Click(object sender, EventArgs e)
+        {
+            if (radioButton_Tat_Ca.Checked == true)
+            {
+                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiTatCa();
+                dataGridView_Danh_Sach_De_Thi.ReadOnly = true;
+            }    
+            else
+            {
+                panel_Selection.Enabled = true;
+            }
         }
     }
 }

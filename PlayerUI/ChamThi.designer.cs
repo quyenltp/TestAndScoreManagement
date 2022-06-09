@@ -62,7 +62,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(23, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.Size = new System.Drawing.Size(92, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên môn:";
             // 
@@ -72,7 +72,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(23, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 22);
+            this.label3.Size = new System.Drawing.Size(80, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Tên lớp:";
             // 
@@ -82,7 +82,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(23, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 22);
+            this.label4.Size = new System.Drawing.Size(141, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Tên giảng viên:";
             // 
@@ -103,7 +103,7 @@
             this.customTextBox1.PasswordChar = false;
             this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox1.PlaceholderText = "";
-            this.customTextBox1.Size = new System.Drawing.Size(496, 37);
+            this.customTextBox1.Size = new System.Drawing.Size(496, 39);
             this.customTextBox1.TabIndex = 5;
             this.customTextBox1.Texts = "";
             this.customTextBox1.UnderlinedStyle = false;
@@ -125,7 +125,7 @@
             this.customTextBox2.PasswordChar = false;
             this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox2.PlaceholderText = "";
-            this.customTextBox2.Size = new System.Drawing.Size(497, 37);
+            this.customTextBox2.Size = new System.Drawing.Size(497, 39);
             this.customTextBox2.TabIndex = 6;
             this.customTextBox2.Texts = "";
             this.customTextBox2.UnderlinedStyle = false;
@@ -147,7 +147,7 @@
             this.customTextBox3.PasswordChar = false;
             this.customTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox3.PlaceholderText = "";
-            this.customTextBox3.Size = new System.Drawing.Size(496, 37);
+            this.customTextBox3.Size = new System.Drawing.Size(496, 39);
             this.customTextBox3.TabIndex = 7;
             this.customTextBox3.Texts = "";
             this.customTextBox3.UnderlinedStyle = false;
@@ -206,7 +206,7 @@
             this.customTextBox8.PasswordChar = false;
             this.customTextBox8.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox8.PlaceholderText = "";
-            this.customTextBox8.Size = new System.Drawing.Size(497, 37);
+            this.customTextBox8.Size = new System.Drawing.Size(497, 39);
             this.customTextBox8.TabIndex = 27;
             this.customTextBox8.Texts = "";
             this.customTextBox8.UnderlinedStyle = false;
@@ -228,7 +228,7 @@
             this.customTextBox7.PasswordChar = false;
             this.customTextBox7.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox7.PlaceholderText = "";
-            this.customTextBox7.Size = new System.Drawing.Size(496, 37);
+            this.customTextBox7.Size = new System.Drawing.Size(496, 39);
             this.customTextBox7.TabIndex = 26;
             this.customTextBox7.Texts = "";
             this.customTextBox7.UnderlinedStyle = false;
@@ -250,7 +250,7 @@
             this.customTextBox6.PasswordChar = false;
             this.customTextBox6.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox6.PlaceholderText = "";
-            this.customTextBox6.Size = new System.Drawing.Size(226, 37);
+            this.customTextBox6.Size = new System.Drawing.Size(86, 39);
             this.customTextBox6.TabIndex = 25;
             this.customTextBox6.Texts = "";
             this.customTextBox6.UnderlinedStyle = false;
@@ -272,7 +272,7 @@
             this.customTextBox5.PasswordChar = false;
             this.customTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox5.PlaceholderText = "";
-            this.customTextBox5.Size = new System.Drawing.Size(497, 37);
+            this.customTextBox5.Size = new System.Drawing.Size(497, 39);
             this.customTextBox5.TabIndex = 24;
             this.customTextBox5.Texts = "";
             this.customTextBox5.UnderlinedStyle = false;
@@ -294,7 +294,7 @@
             this.customTextBox4.PasswordChar = false;
             this.customTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox4.PlaceholderText = "";
-            this.customTextBox4.Size = new System.Drawing.Size(495, 37);
+            this.customTextBox4.Size = new System.Drawing.Size(495, 39);
             this.customTextBox4.TabIndex = 23;
             this.customTextBox4.Texts = "";
             this.customTextBox4.UnderlinedStyle = false;
@@ -305,7 +305,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(9, 213);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 22);
+            this.label9.Size = new System.Drawing.Size(81, 24);
             this.label9.TabIndex = 22;
             this.label9.Text = "Ghi chú:";
             // 
@@ -315,7 +315,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(9, 168);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 22);
+            this.label8.Size = new System.Drawing.Size(96, 24);
             this.label8.TabIndex = 21;
             this.label8.Text = "Điểm chữ:";
             // 
@@ -325,7 +325,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(9, 123);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 22);
+            this.label7.Size = new System.Drawing.Size(84, 24);
             this.label7.TabIndex = 20;
             this.label7.Text = "Điếm số:";
             // 
@@ -335,7 +335,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(9, 78);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 22);
+            this.label6.Size = new System.Drawing.Size(71, 24);
             this.label6.TabIndex = 19;
             this.label6.Text = "Họ tên:";
             // 
@@ -345,7 +345,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(9, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 22);
+            this.label5.Size = new System.Drawing.Size(146, 24);
             this.label5.TabIndex = 18;
             this.label5.Text = "Mã số sinh viên:";
             // 
@@ -355,7 +355,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(23, 226);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(163, 22);
+            this.label10.Size = new System.Drawing.Size(171, 24);
             this.label10.TabIndex = 21;
             this.label10.Text = "Thông tin chấm thi:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
