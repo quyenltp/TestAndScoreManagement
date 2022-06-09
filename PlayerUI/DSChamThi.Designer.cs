@@ -30,6 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mssv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lanthi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemthibangso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diemthibangchu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,12 +56,83 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 86);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mssv,
+            this.hoten,
+            this.maDT,
+            this.lanthi,
+            this.diemthibangso,
+            this.diemthibangchu,
+            this.ghichu});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(663, 477);
+            this.dataGridView1.Size = new System.Drawing.Size(663, 505);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // mssv
+            // 
+            this.mssv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.mssv.DataPropertyName = "mssv";
+            this.mssv.HeaderText = "MSSV";
+            this.mssv.MinimumWidth = 6;
+            this.mssv.Name = "mssv";
+            this.mssv.Width = 74;
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.hoten.DataPropertyName = "hoten";
+            this.hoten.HeaderText = "Họ Tên";
+            this.hoten.MinimumWidth = 6;
+            this.hoten.Name = "hoten";
+            this.hoten.Width = 81;
+            // 
+            // maDT
+            // 
+            this.maDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.maDT.DataPropertyName = "maDT";
+            this.maDT.HeaderText = "Mã đề thi";
+            this.maDT.MinimumWidth = 6;
+            this.maDT.Name = "maDT";
+            this.maDT.Width = 90;
+            // 
+            // lanthi
+            // 
+            this.lanthi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.lanthi.DataPropertyName = "lanthi";
+            this.lanthi.HeaderText = "Lần thi";
+            this.lanthi.MinimumWidth = 6;
+            this.lanthi.Name = "lanthi";
+            this.lanthi.Width = 74;
+            // 
+            // diemthibangso
+            // 
+            this.diemthibangso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.diemthibangso.DataPropertyName = "diemthibangso";
+            this.diemthibangso.HeaderText = "Điểm (số)";
+            this.diemthibangso.MinimumWidth = 6;
+            this.diemthibangso.Name = "diemthibangso";
+            this.diemthibangso.Width = 93;
+            // 
+            // diemthibangchu
+            // 
+            this.diemthibangchu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.diemthibangchu.DataPropertyName = "diemthibangchu";
+            this.diemthibangchu.HeaderText = "Điểm (chữ)";
+            this.diemthibangchu.MinimumWidth = 6;
+            this.diemthibangchu.Name = "diemthibangchu";
+            this.diemthibangchu.Width = 99;
+            // 
+            // ghichu
+            // 
+            this.ghichu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ghichu.DataPropertyName = "ghichu";
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 6;
+            this.ghichu.Name = "ghichu";
             // 
             // DSChamThi
             // 
@@ -66,6 +144,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DSChamThi";
             this.Text = "DSChamThi";
+            this.Load += new System.EventHandler(this.DSChamThi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -76,5 +155,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mssv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lanthi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemthibangso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diemthibangchu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghichu;
     }
 }
