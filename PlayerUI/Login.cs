@@ -12,30 +12,52 @@ namespace TestAndScore
 {
     public partial class Login : Form
     {
+
+        TaiKhoan tk = new TaiKhoan();
+        public static int loaitk;
+        public static string matk;
         public Login()
         {
             InitializeComponent();
             labelWarning.Hide();
         }
-              
-        private void txtUsername_Enter(object sender, EventArgs e)
-        {
-            txtUsername.PlaceholderText = "";
-        }
 
-        private void txtUsername_Leave(object sender, EventArgs e)
+        private void b1_Click(object sender, EventArgs e)
         {
-            txtUsername.PlaceholderText = "Tên đăng nhập";
-        }
+            if (txtUsername.Texts == "" || txtPassword.Texts == "")
+            {
+                MessageBox.Show("Thông tin chưa đầy đủ!\n Vui long nhập lại thông tin!");
+            }
+            else
+            {
+                if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 1)
+                {
+                    MessageBox.Show("Chào Mừng  " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
+                    MainForm f = new MainForm();
+                    f.Show();
+                    Hide();
+                    //Dispose();
+                }
 
-        private void txtPassword_Enter(object sender, EventArgs e)
-        {
-            txtPassword.PlaceholderText = "";
-        }
+                else if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 2)
+                {
+                    MessageBox.Show("Chào Mừng == " + txtUsername.Texts + "== Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
+                    MainForm f = new MainForm();
+                    f.Show();
+                    Hide();
+                    //Dispose();
+                }
 
-        private void txtPassword_Leave(object sender, EventArgs e)
-        {
-            txtPassword.PlaceholderText = "Mật khẩu";
+                else
+                {
+                    if (MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác!\nVui lòng nhập lại thông tin?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        txtUsername.Focus();
+                    else
+                    {
+                        this.Close();
+                    }
+                }
+            }
         }
     }
 }

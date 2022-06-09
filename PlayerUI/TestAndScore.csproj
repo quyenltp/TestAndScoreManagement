@@ -56,6 +56,8 @@
     <Compile Include="BaoCaoNam.Designer.cs">
       <DependentUpon>BaoCaoNam.cs</DependentUpon>
     </Compile>
+    <Compile Include="CSDL\TaiKhoan.cs" />
+    <Compile Include="Data\Data.cs" />
     <Compile Include="DSChamThi.cs">
       <SubType>Form</SubType>
     </Compile>
