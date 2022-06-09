@@ -33,7 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtTenMonThi = new CustomControls.CustomControls.CustomTextBox();
             this.txtNamHoc = new CustomControls.CustomControls.CustomTextBox();
             this.txtThoiLuong = new CustomControls.CustomControls.CustomTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -57,6 +56,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.btnLuuDeThi = new CustomControls.CustomControls.CustomButton();
+            this.customComboBox1 = new CustomControls.CustomControls.CustomComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -113,28 +113,6 @@
             this.label5.Size = new System.Drawing.Size(118, 26);
             this.label5.TabIndex = 18;
             this.label5.Text = "Thời lượng:";
-            // 
-            // txtTenMonThi
-            // 
-            this.txtTenMonThi.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTenMonThi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.txtTenMonThi.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
-            this.txtTenMonThi.BorderRadius = 15;
-            this.txtTenMonThi.BorderSize = 2;
-            this.txtTenMonThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenMonThi.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTenMonThi.Location = new System.Drawing.Point(160, 19);
-            this.txtTenMonThi.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txtTenMonThi.Multiline = false;
-            this.txtTenMonThi.Name = "txtTenMonThi";
-            this.txtTenMonThi.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.txtTenMonThi.PasswordChar = false;
-            this.txtTenMonThi.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTenMonThi.PlaceholderText = "";
-            this.txtTenMonThi.Size = new System.Drawing.Size(278, 43);
-            this.txtTenMonThi.TabIndex = 24;
-            this.txtTenMonThi.Texts = "";
-            this.txtTenMonThi.UnderlinedStyle = false;
             // 
             // txtNamHoc
             // 
@@ -433,6 +411,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.customComboBox1);
             this.panel2.Controls.Add(this.comboBoxLanThi);
             this.panel2.Controls.Add(this.comboBoxHocKy);
             this.panel2.Controls.Add(this.comboBoxHinhThucThi);
@@ -444,7 +423,6 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtThoiLuong);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txtTenMonThi);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(-2, 71);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -462,8 +440,11 @@
             this.comboBoxLanThi.ForeColor = System.Drawing.Color.DimGray;
             this.comboBoxLanThi.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.comboBoxLanThi.Items.AddRange(new object[] {
-            "Lần 1",
-            "Lần 2"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.comboBoxLanThi.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.comboBoxLanThi.ListTextColor = System.Drawing.Color.DimGray;
             this.comboBoxLanThi.Location = new System.Drawing.Point(593, 125);
@@ -504,7 +485,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(29, 89);
+            this.label13.Location = new System.Drawing.Point(22, 89);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(139, 26);
             this.label13.TabIndex = 33;
@@ -514,11 +495,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(500, 141);
+            this.label14.Location = new System.Drawing.Point(466, 141);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 26);
+            this.label14.Size = new System.Drawing.Size(121, 26);
             this.label14.TabIndex = 34;
-            this.label14.Text = "Lần thi:";
+            this.label14.Text = "Số câu hỏi:";
             // 
             // btnLuuDeThi
             // 
@@ -540,6 +521,28 @@
             this.btnLuuDeThi.TextColor = System.Drawing.Color.White;
             this.btnLuuDeThi.UseVisualStyleBackColor = false;
             this.btnLuuDeThi.Click += new System.EventHandler(this.btnLuuDeThi_Click);
+            // 
+            // customComboBox1
+            // 
+            this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.customComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox1.BorderSize = 1;
+            this.customComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.Location = new System.Drawing.Point(160, 20);
+            this.customComboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customComboBox1.MaximumSize = new System.Drawing.Size(562, 44);
+            this.customComboBox1.MinimumSize = new System.Drawing.Size(56, 44);
+            this.customComboBox1.Name = "customComboBox1";
+            this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.customComboBox1.Size = new System.Drawing.Size(278, 44);
+            this.customComboBox1.TabIndex = 37;
+            this.customComboBox1.Texts = "";
+            this.customComboBox1.Load += new System.EventHandler(this.customComboBox1_Load);
             // 
             // SoanDeThi
             // 
@@ -572,7 +575,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private CustomControls.CustomControls.CustomTextBox txtTenMonThi;
         private CustomControls.CustomControls.CustomTextBox txtNamHoc;
         private CustomControls.CustomControls.CustomTextBox txtThoiLuong;
         private System.Windows.Forms.Panel panel1;
@@ -596,5 +598,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private CustomControls.CustomControls.CustomButton btnLuuDeThi;
+        private CustomControls.CustomControls.CustomComboBox customComboBox1;
     }
 }

@@ -19,6 +19,23 @@ namespace TestAndScore
             InitializeComponent();
         }
 
+        private string taoMaCH()
+        {
+            string a = "CH";
+            if((ch.hienthi().Rows.Count + 1)<10)
+            {
+                a += "00" + (ch.hienthi().Rows.Count + 1);
+            }
+            if(((ch.hienthi().Rows.Count + 1)<100)&&((ch.hienthi().Rows.Count + 1) >= 10))
+            {
+                a += "0" + (ch.hienthi().Rows.Count + 1);
+            }
+            if(((ch.hienthi().Rows.Count + 1) >= 100))
+            {
+                a += (ch.hienthi().Rows.Count + 1);
+            }
+            return a;
+        }
         private void customButton1_Click(object sender, EventArgs e)
         {
 
@@ -27,7 +44,7 @@ namespace TestAndScore
             try
             {
                 string dokho = customComboBox1.Texts;
-                ch.them("CH" + (ch.hienthi().Rows.Count + 1).ToString(), customComboBox2.Texts, dokho, customTextBox1.Texts);
+                ch.them(taoMaCH(), customComboBox2.Texts, dokho, customTextBox1.Texts);
                 MessageBox.Show("Thêm câu hỏi mới thành công");
             }
             catch
