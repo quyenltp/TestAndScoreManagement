@@ -33,11 +33,11 @@ namespace TestAndScore
             {
                 if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 1)
                 {
-                    MessageBox.Show("Chào Mừng  " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
+                    MessageBox.Show("Chào Mừng " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
                     MainForm f = new MainForm();
                     f.Show();
                     Hide();
-                    Close();
+                    //Close();
                 }
 
                 else if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 2)
@@ -46,7 +46,7 @@ namespace TestAndScore
                     MainForm f = new MainForm();
                     f.Show();
                     Hide();
-                    Close();
+                    //Close();
                 }
 
                 else

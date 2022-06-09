@@ -39,7 +39,9 @@ namespace TestAndScore
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login lg = new Login();
+            lg.Show();
+            Close();
         }
 
         private Form activeForm = null;
