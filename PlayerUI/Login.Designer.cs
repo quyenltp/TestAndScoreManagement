@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new CustomControls.CustomControls.CustomTextBox();
             this.labelWarning = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.txtUsername.BorderRadius = 15;
             this.txtUsername.BorderSize = 2;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(626, 279);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtUsername.MaximumSize = new System.Drawing.Size(338, 56);
@@ -143,12 +144,24 @@
             this.labelWarning.TabIndex = 7;
             this.labelWarning.Text = "Tên đăng nhập hoặc mật khẩu không chính xác.";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(647, 436);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(159, 24);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "Hiển thị mật khẩu";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.ck1_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(1053, 716);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
@@ -173,5 +186,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private CustomControls.CustomControls.CustomTextBox txtPassword;
         private System.Windows.Forms.Label labelWarning;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

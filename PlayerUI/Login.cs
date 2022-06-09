@@ -37,7 +37,7 @@ namespace TestAndScore
                     MainForm f = new MainForm();
                     f.Show();
                     Hide();
-                    //Dispose();
+                    Close();
                 }
 
                 else if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 2)
@@ -46,7 +46,7 @@ namespace TestAndScore
                     MainForm f = new MainForm();
                     f.Show();
                     Hide();
-                    //Dispose();
+                    Close();
                 }
 
                 else
@@ -59,6 +59,13 @@ namespace TestAndScore
                     }
                 }
             }
+        }
+        private void ck1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+                txtPassword.PasswordChar = false;
+            else
+                txtPassword.PasswordChar = true;
         }
     }
 }
