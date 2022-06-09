@@ -99,7 +99,7 @@
             this.txtNam.BackColor = System.Drawing.SystemColors.Window;
             this.txtNam.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.txtNam.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtNam.BorderRadius = 0;
+            this.txtNam.BorderRadius = 15;
             this.txtNam.BorderSize = 2;
             this.txtNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtNam.ForeColor = System.Drawing.Color.DimGray;

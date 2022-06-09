@@ -28,7 +28,6 @@
             this.customTextBox2 = new CustomControls.CustomControls.CustomTextBox();
             this.customTextBox3 = new CustomControls.CustomControls.CustomTextBox();
             this.customButton1 = new CustomControls.CustomControls.CustomButton();
-            this.customButton2 = new CustomControls.CustomControls.CustomButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.customTextBox8 = new CustomControls.CustomControls.CustomTextBox();
             this.customTextBox7 = new CustomControls.CustomControls.CustomTextBox();
@@ -164,33 +163,13 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(169, 510);
+            this.customButton1.Location = new System.Drawing.Point(256, 512);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(192, 40);
             this.customButton1.TabIndex = 18;
             this.customButton1.Text = "Lưu";
             this.customButton1.TextColor = System.Drawing.Color.White;
             this.customButton1.UseVisualStyleBackColor = false;
-            // 
-            // customButton2
-            // 
-            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButton2.BorderRadius = 15;
-            this.customButton2.BorderSize = 0;
-            this.customButton2.FlatAppearance.BorderSize = 0;
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(441, 510);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(186, 40);
-            this.customButton2.TabIndex = 19;
-            this.customButton2.Text = "Xuất danh sách";
-            this.customButton2.TextColor = System.Drawing.Color.White;
-            this.customButton2.UseVisualStyleBackColor = false;
-            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
             // 
             // panel1
             // 
@@ -388,7 +367,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(687, 575);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.customButton2);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.customTextBox3);
             this.Controls.Add(this.customTextBox2);
@@ -419,7 +397,6 @@
         private CustomControls.CustomControls.CustomTextBox customTextBox2;
         private CustomControls.CustomControls.CustomTextBox customTextBox3;
         private CustomControls.CustomControls.CustomButton customButton1;
-        private CustomControls.CustomControls.CustomButton customButton2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private CustomControls.CustomControls.CustomTextBox customTextBox8;
