@@ -35,12 +35,12 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.label1.Location = new System.Drawing.Point(141, 9);
+            this.label1.Location = new System.Drawing.Point(150, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(403, 55);
+            this.label1.Size = new System.Drawing.Size(364, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kết Quả Chấm Thi";
             // 
@@ -155,7 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(668, 526);
+            this.ClientSize = new System.Drawing.Size(687, 575);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.customTextBox3);
             this.Controls.Add(this.customTextBox2);
