@@ -39,9 +39,13 @@ namespace TestAndScore
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Login lg = new Login();
-            lg.Show();
-            Close();
+            if ( MessageBox.Show("Bạn có thực sự muốn đăng xuất?","Xác nhận",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+
+                Login lg = new Login();
+                lg.Show();
+                this.Close();
+            }
         }
 
         private Form activeForm = null;

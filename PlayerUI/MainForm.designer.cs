@@ -321,7 +321,6 @@
             this.btnCaiDat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCaiDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCaiDat.UseVisualStyleBackColor = true;
-            this.btnCaiDat.Click += new System.EventHandler(this.btnCaiDat_Click);
             // 
             // btnThongKe
             // 
