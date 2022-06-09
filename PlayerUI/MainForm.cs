@@ -22,6 +22,7 @@ namespace TestAndScore
         private void hideSubMenu()
         {
             panelSoanThao.Visible = false;
+            panelChamThi.Visible = false;
         }
 
         private void showSubMenu(Panel subMenu)
@@ -74,7 +75,29 @@ namespace TestAndScore
 
         private void btnChamThi_Click(object sender, EventArgs e)
         {
+            showSubMenu(panelChamThi);
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            openChildForm(new TrangChu());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             openChildForm(new ChamThi());
+            hideSubMenu();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DSChamThi());
+            hideSubMenu();
+        }
+
+        private void btnTraCuu_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new DSDeThi());
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
@@ -82,14 +105,9 @@ namespace TestAndScore
             openChildForm(new BaoCaoNam());
         }
 
-        private void btnTraCuu_Click(object sender, EventArgs e)
+        private void btnCaiDat_Click(object sender, EventArgs e)
         {
-            openChildForm(new DSDeThi());
-        }
 
-        private void btnTrangChu_Click(object sender, EventArgs e)
-        {
-            openChildForm(new TrangChu());
         }
     }
 }

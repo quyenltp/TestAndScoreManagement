@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.BackgroundImage = global::PlayerUI.Properties.Resources.nen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(688, 536);
+            this.ClientSize = new System.Drawing.Size(687, 575);
             this.Name = "TrangChu";
             this.Text = "TrangChu";
             this.ResumeLayout(false);

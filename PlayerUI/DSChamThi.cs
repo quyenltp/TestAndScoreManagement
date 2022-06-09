@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace TestAndScore
 {
-    public partial class ChamThi : Form
+    public partial class DSChamThi : Form
     {
-        public ChamThi()
+        public DSChamThi()
         {
             InitializeComponent();
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-        
     }
 }

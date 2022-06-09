@@ -15,15 +15,27 @@ namespace TestAndScore
         public Login()
         {
             InitializeComponent();
+            labelWarning.Hide();
         }
-        public static int loaitk;
-        public static string matk;
-
-        private void btnLogin_Click(object sender, EventArgs e)
+              
+        private void txtUsername_Enter(object sender, EventArgs e)
         {
-            MainForm main = new MainForm();
-            this.Hide();
-            main.ShowDialog();
+            txtUsername.PlaceholderText = "";
+        }
+
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            txtUsername.PlaceholderText = "Tên đăng nhập";
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            txtPassword.PlaceholderText = "";
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            txtPassword.PlaceholderText = "Mật khẩu";
         }
     }
 }
