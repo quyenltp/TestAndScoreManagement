@@ -74,7 +74,6 @@
             // dataGridView_Danh_Sach_De_Thi
             // 
             this.dataGridView_Danh_Sach_De_Thi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_Danh_Sach_De_Thi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView_Danh_Sach_De_Thi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Danh_Sach_De_Thi.Location = new System.Drawing.Point(12, 299);
             this.dataGridView_Danh_Sach_De_Thi.Name = "dataGridView_Danh_Sach_De_Thi";

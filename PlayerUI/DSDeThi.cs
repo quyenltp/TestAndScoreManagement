@@ -48,6 +48,15 @@ namespace TestAndScore
             {
                 dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiTatCa();
                 dataGridView_Danh_Sach_De_Thi.ReadOnly = true;
+
+                /*int totalRowHeight = dataGridView_Danh_Sach_De_Thi.ColumnHeadersHeight;
+                foreach (DataGridViewRow row in dataGridView_Danh_Sach_De_Thi.Rows)
+                    totalRowHeight += row.Height;
+                dataGridView_Danh_Sach_De_Thi.Height = totalRowHeight;
+                this.Height = dataGridView_Danh_Sach_De_Thi.Height + 100;*/
+
+                dataGridView_Danh_Sach_De_Thi.AutoResizeColumns();
+                dataGridView_Danh_Sach_De_Thi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             }    
             else
             {
