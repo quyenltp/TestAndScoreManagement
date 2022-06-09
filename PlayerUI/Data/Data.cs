@@ -23,6 +23,16 @@ namespace TestAndScore.Data
             da.Fill(dt);
             return dt;
         }
+
+        public DataSet GET2(string sql)
+        {
+            SqlConnection con = connect();
+
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
         public void AC(string sql)
         {
             SqlConnection con = connect();

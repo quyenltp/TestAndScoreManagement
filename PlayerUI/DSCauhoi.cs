@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,14 +38,20 @@ namespace PlayerUI
             soCau = cauhoi;
             InitializeComponent();
         }
-        public DSCauHoi()
-        {
-            InitializeComponent();
-        }
 
         private void DSCauHoi_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = ch.laycauhoi(a);
+            //dataGridView1.AutoGenerateColumns = false;           
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = @"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI5;Integrated Security=True";
+            con.Open();
+            string sql = "select * from CAUHOI where maMH like '%" + a + "%'";
+            DataSet ds = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, con);
+            adapter.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.DataSource = ch.laycauhoi(a).Tables[0];
+            dataGridView1.Refresh();
         }
 
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -64,46 +71,42 @@ namespace PlayerUI
                 {
                     case 0:
                         {
-                            CH1 = dataGridView1.Rows[dong].Cells[7].Value.ToString();
-                            mCH1 = dataGridView1.Rows[dong].Cells[4].Value.ToString();
+                            CH1 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH1 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
                             check++;
                             return;
                         }
                     case 1:
                         {
-                            CH2 = dataGridView1.Rows[dong].Cells[7].Value.ToString();
-                            mCH2 = dataGridView1.Rows[dong].Cells[4].Value.ToString();
+                            CH2 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH2 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
                             check++;
                             return;
                         }
                     case 2:
                         {
-                            CH3 = dataGridView1.Rows[dong].Cells[7].Value.ToString();
-                            mCH3 = dataGridView1.Rows[dong].Cells[4].Value.ToString();
+                            CH3 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH3 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
                             check++;
                             return;
                         }
                     case 3:
                         {
-                            CH4 = dataGridView1.Rows[dong].Cells[7].Value.ToString();
-                            mCH4 = dataGridView1.Rows[dong].Cells[4].Value.ToString();
+                            CH4 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH4 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
                             check++;
                             return;
                         }
                     case 4:
                         {
-                            CH5 = dataGridView1.Rows[dong].Cells[7].Value.ToString();
+                            CH5 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH5 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
                             check++;
                             return;
                         }
                 }
                 soCau--;
             }
-        }
-
-        private void changeCauhoi()
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -27,10 +27,10 @@ namespace TestAndScore.Data
                 return da.GET(sql);
             }
             
-            public DataTable laycauhoi(string dk)
+            public DataSet laycauhoi(string dk)
         {
             string sql = "select * from CAUHOI where maMH like '%" + dk + "%'";
-            return da.GET(sql);
+            return da.GET2(sql);
         }
 
             public void them(string maCH, string mamon, string dokho, string noidung)
