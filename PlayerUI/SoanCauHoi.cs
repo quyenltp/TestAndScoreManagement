@@ -27,7 +27,7 @@ namespace TestAndScore
             try
             {
                 string dokho = customComboBox1.Texts;
-                ch.them((ch.hienthi().Rows.Count + 1).ToString(), customComboBox2.Texts, dokho, customTextBox1.Texts);
+                ch.them("CH" + (ch.hienthi().Rows.Count + 1).ToString(), customComboBox2.Texts, dokho, customTextBox1.Texts);
                 MessageBox.Show("Thêm câu hỏi mới thành công");
             }
             catch

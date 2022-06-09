@@ -23,7 +23,7 @@ namespace TestAndScore.Data
             }
             public DataTable mamonhoc()
             {
-                string sql = "select maMH from MONTHI";
+                string sql = "select maMH from MONHOC";
                 return da.GET(sql);
             }
             public void them(string maCH, string mamon, string dokho, string noidung)
