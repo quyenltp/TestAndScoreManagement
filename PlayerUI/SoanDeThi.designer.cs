@@ -49,14 +49,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.customComboBox1 = new CustomControls.CustomControls.CustomComboBox();
-            this.customButton1 = new CustomControls.CustomControls.CustomButton();
+            this.comboBoxHocKy = new CustomControls.CustomControls.CustomComboBox();
+            this.btnDSCauHoi = new CustomControls.CustomControls.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.customComboBox3 = new CustomControls.CustomControls.CustomComboBox();
-            this.customComboBox2 = new CustomControls.CustomControls.CustomComboBox();
+            this.comboBoxLanThi = new CustomControls.CustomControls.CustomComboBox();
+            this.comboBoxHinhThucThi = new CustomControls.CustomControls.CustomComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.customButton2 = new CustomControls.CustomControls.CustomButton();
+            this.btnLuuDeThi = new CustomControls.CustomControls.CustomButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -384,54 +384,54 @@
             this.label12.TabIndex = 29;
             this.label12.Text = "(phút)";
             // 
-            // customComboBox1
+            // comboBoxHocKy
             // 
-            this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customComboBox1.BorderSize = 1;
-            this.customComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customComboBox1.Items.AddRange(new object[] {
+            this.comboBoxHocKy.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBoxHocKy.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.comboBoxHocKy.BorderSize = 1;
+            this.comboBoxHocKy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.comboBoxHocKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxHocKy.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxHocKy.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.comboBoxHocKy.Items.AddRange(new object[] {
             "Học kỳ 1",
             "Học kỳ 2",
             "Học kỳ hè"});
-            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(527, 58);
-            this.customComboBox1.MaximumSize = new System.Drawing.Size(150, 35);
-            this.customComboBox1.MinimumSize = new System.Drawing.Size(35, 35);
-            this.customComboBox1.Name = "customComboBox1";
-            this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox1.Size = new System.Drawing.Size(137, 35);
-            this.customComboBox1.TabIndex = 30;
-            this.customComboBox1.Texts = "";
+            this.comboBoxHocKy.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.comboBoxHocKy.ListTextColor = System.Drawing.Color.DimGray;
+            this.comboBoxHocKy.Location = new System.Drawing.Point(527, 58);
+            this.comboBoxHocKy.MaximumSize = new System.Drawing.Size(150, 35);
+            this.comboBoxHocKy.MinimumSize = new System.Drawing.Size(35, 35);
+            this.comboBoxHocKy.Name = "comboBoxHocKy";
+            this.comboBoxHocKy.Padding = new System.Windows.Forms.Padding(1);
+            this.comboBoxHocKy.Size = new System.Drawing.Size(137, 35);
+            this.comboBoxHocKy.TabIndex = 30;
+            this.comboBoxHocKy.Texts = "";
             // 
-            // customButton1
+            // btnDSCauHoi
             // 
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButton1.BorderRadius = 15;
-            this.customButton1.BorderSize = 0;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(236, 215);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(265, 40);
-            this.customButton1.TabIndex = 31;
-            this.customButton1.Text = "Danh sách câu hỏi";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.btnDSCauHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.btnDSCauHoi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.btnDSCauHoi.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDSCauHoi.BorderRadius = 15;
+            this.btnDSCauHoi.BorderSize = 0;
+            this.btnDSCauHoi.FlatAppearance.BorderSize = 0;
+            this.btnDSCauHoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDSCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDSCauHoi.ForeColor = System.Drawing.Color.White;
+            this.btnDSCauHoi.Location = new System.Drawing.Point(236, 215);
+            this.btnDSCauHoi.Name = "btnDSCauHoi";
+            this.btnDSCauHoi.Size = new System.Drawing.Size(265, 40);
+            this.btnDSCauHoi.TabIndex = 31;
+            this.btnDSCauHoi.Text = "Danh sách câu hỏi";
+            this.btnDSCauHoi.TextColor = System.Drawing.Color.White;
+            this.btnDSCauHoi.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.customComboBox3);
-            this.panel2.Controls.Add(this.customComboBox1);
-            this.panel2.Controls.Add(this.customComboBox2);
+            this.panel2.Controls.Add(this.comboBoxLanThi);
+            this.panel2.Controls.Add(this.comboBoxHocKy);
+            this.panel2.Controls.Add(this.comboBoxHinhThucThi);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.txtNamHoc);
             this.panel2.Controls.Add(this.label14);
@@ -447,51 +447,51 @@
             this.panel2.Size = new System.Drawing.Size(690, 152);
             this.panel2.TabIndex = 32;
             // 
-            // customComboBox3
+            // comboBoxLanThi
             // 
-            this.customComboBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customComboBox3.BorderSize = 1;
-            this.customComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customComboBox3.Items.AddRange(new object[] {
+            this.comboBoxLanThi.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBoxLanThi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.comboBoxLanThi.BorderSize = 1;
+            this.comboBoxLanThi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.comboBoxLanThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxLanThi.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxLanThi.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.comboBoxLanThi.Items.AddRange(new object[] {
             "Lần 1",
             "Lần 2"});
-            this.customComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox3.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.Location = new System.Drawing.Point(527, 100);
-            this.customComboBox3.MaximumSize = new System.Drawing.Size(150, 35);
-            this.customComboBox3.MinimumSize = new System.Drawing.Size(35, 35);
-            this.customComboBox3.Name = "customComboBox3";
-            this.customComboBox3.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox3.Size = new System.Drawing.Size(137, 35);
-            this.customComboBox3.TabIndex = 36;
-            this.customComboBox3.Texts = "";
+            this.comboBoxLanThi.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.comboBoxLanThi.ListTextColor = System.Drawing.Color.DimGray;
+            this.comboBoxLanThi.Location = new System.Drawing.Point(527, 100);
+            this.comboBoxLanThi.MaximumSize = new System.Drawing.Size(150, 35);
+            this.comboBoxLanThi.MinimumSize = new System.Drawing.Size(35, 35);
+            this.comboBoxLanThi.Name = "comboBoxLanThi";
+            this.comboBoxLanThi.Padding = new System.Windows.Forms.Padding(1);
+            this.comboBoxLanThi.Size = new System.Drawing.Size(137, 35);
+            this.comboBoxLanThi.TabIndex = 36;
+            this.comboBoxLanThi.Texts = "";
             // 
-            // customComboBox2
+            // comboBoxHinhThucThi
             // 
-            this.customComboBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customComboBox2.BorderSize = 1;
-            this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customComboBox2.Items.AddRange(new object[] {
+            this.comboBoxHinhThucThi.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBoxHinhThucThi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.comboBoxHinhThucThi.BorderSize = 1;
+            this.comboBoxHinhThucThi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.comboBoxHinhThucThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxHinhThucThi.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxHinhThucThi.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.comboBoxHinhThucThi.Items.AddRange(new object[] {
             "Được sử dụng tài liệu",
             "Không sử dụng tài liệu"});
-            this.customComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.Location = new System.Drawing.Point(142, 58);
-            this.customComboBox2.MaximumSize = new System.Drawing.Size(500, 35);
-            this.customComboBox2.MinimumSize = new System.Drawing.Size(50, 35);
-            this.customComboBox2.Name = "customComboBox2";
-            this.customComboBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox2.Size = new System.Drawing.Size(247, 35);
-            this.customComboBox2.TabIndex = 35;
-            this.customComboBox2.Texts = "";
+            this.comboBoxHinhThucThi.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.comboBoxHinhThucThi.ListTextColor = System.Drawing.Color.DimGray;
+            this.comboBoxHinhThucThi.Location = new System.Drawing.Point(142, 58);
+            this.comboBoxHinhThucThi.MaximumSize = new System.Drawing.Size(500, 35);
+            this.comboBoxHinhThucThi.MinimumSize = new System.Drawing.Size(50, 35);
+            this.comboBoxHinhThucThi.Name = "comboBoxHinhThucThi";
+            this.comboBoxHinhThucThi.Padding = new System.Windows.Forms.Padding(1);
+            this.comboBoxHinhThucThi.Size = new System.Drawing.Size(247, 35);
+            this.comboBoxHinhThucThi.TabIndex = 35;
+            this.comboBoxHinhThucThi.Texts = "";
             // 
             // label13
             // 
@@ -513,24 +513,24 @@
             this.label14.TabIndex = 34;
             this.label14.Text = "Lần thi:";
             // 
-            // customButton2
+            // btnLuuDeThi
             // 
-            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButton2.BorderRadius = 15;
-            this.customButton2.BorderSize = 0;
-            this.customButton2.FlatAppearance.BorderSize = 0;
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(236, 523);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(265, 40);
-            this.customButton2.TabIndex = 33;
-            this.customButton2.Text = "Lưu đề thi";
-            this.customButton2.TextColor = System.Drawing.Color.White;
-            this.customButton2.UseVisualStyleBackColor = false;
+            this.btnLuuDeThi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.btnLuuDeThi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.btnLuuDeThi.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnLuuDeThi.BorderRadius = 15;
+            this.btnLuuDeThi.BorderSize = 0;
+            this.btnLuuDeThi.FlatAppearance.BorderSize = 0;
+            this.btnLuuDeThi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuuDeThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLuuDeThi.ForeColor = System.Drawing.Color.White;
+            this.btnLuuDeThi.Location = new System.Drawing.Point(236, 523);
+            this.btnLuuDeThi.Name = "btnLuuDeThi";
+            this.btnLuuDeThi.Size = new System.Drawing.Size(265, 40);
+            this.btnLuuDeThi.TabIndex = 33;
+            this.btnLuuDeThi.Text = "Lưu đề thi";
+            this.btnLuuDeThi.TextColor = System.Drawing.Color.White;
+            this.btnLuuDeThi.UseVisualStyleBackColor = false;
             // 
             // SoanDeThi
             // 
@@ -538,8 +538,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(687, 575);
-            this.Controls.Add(this.customButton2);
-            this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.btnLuuDeThi);
+            this.Controls.Add(this.btnDSCauHoi);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -579,13 +579,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private CustomControls.CustomControls.CustomComboBox customComboBox1;
-        private CustomControls.CustomControls.CustomButton customButton1;
+        private CustomControls.CustomControls.CustomComboBox comboBoxHocKy;
+        private CustomControls.CustomControls.CustomButton btnDSCauHoi;
         private System.Windows.Forms.Panel panel2;
-        private CustomControls.CustomControls.CustomComboBox customComboBox3;
-        private CustomControls.CustomControls.CustomComboBox customComboBox2;
+        private CustomControls.CustomControls.CustomComboBox comboBoxLanThi;
+        private CustomControls.CustomControls.CustomComboBox comboBoxHinhThucThi;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private CustomControls.CustomControls.CustomButton customButton2;
+        private CustomControls.CustomControls.CustomButton btnLuuDeThi;
     }
 }
