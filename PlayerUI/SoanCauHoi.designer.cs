@@ -56,7 +56,7 @@
             this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.customTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox1.BorderRadius = 0;
+            this.customTextBox1.BorderRadius = 15;
             this.customTextBox1.BorderSize = 2;
             this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;

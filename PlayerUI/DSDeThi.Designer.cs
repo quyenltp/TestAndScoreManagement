@@ -99,7 +99,7 @@
             this.customDateTimePicker1.BorderSize = 0;
             this.customDateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.customDateTimePicker1.Location = new System.Drawing.Point(100, 140);
-            this.customDateTimePicker1.MinimumSize = new System.Drawing.Size(0, 35);
+            this.customDateTimePicker1.MinimumSize = new System.Drawing.Size(4, 35);
             this.customDateTimePicker1.Name = "customDateTimePicker1";
             this.customDateTimePicker1.Size = new System.Drawing.Size(216, 35);
             this.customDateTimePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
@@ -111,7 +111,7 @@
             this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.customTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox1.BorderRadius = 0;
+            this.customTextBox1.BorderRadius = 15;
             this.customTextBox1.BorderSize = 2;
             this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
@@ -133,7 +133,7 @@
             this.customTextBox2.BackColor = System.Drawing.SystemColors.Window;
             this.customTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox2.BorderRadius = 0;
+            this.customTextBox2.BorderRadius = 15;
             this.customTextBox2.BorderSize = 2;
             this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.customTextBox2.ForeColor = System.Drawing.Color.DimGray;
