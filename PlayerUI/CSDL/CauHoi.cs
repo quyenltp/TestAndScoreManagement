@@ -26,6 +26,13 @@ namespace TestAndScore.Data
                 string sql = "select maMH from MONTHI";
                 return da.GET(sql);
             }
+            
+            public DataTable laycauhoi(string dk)
+        {
+            string sql = "select * from CAUHOI where maMH like '%" + dk + "%'";
+            return da.GET(sql);
+        }
+
             public void them(string maCH, string mamon, string dokho, string noidung)
             {
                 string sql = "insert into CAUHOI values('" + maCH + "','" + mamon + "',N'" + dokho + "',N'" + noidung + "') ";

@@ -32,5 +32,11 @@ namespace TestAndScore.Data
             string sql = "insert into DETHI values('" + maDT + "','" + maMH + "',N'" + hinhthuc + "',N'" + hocki + "',N'" + namhoc + "',N'" + thoiluong + "',N'" + socauhoi + "',N'" + ngaythi + "') ";
             da.AC(sql);
         }
+
+        public void themChitietde(string maDT, string maMH, int stt)
+        {
+            string sql = "insert into CHITIETDETHI values('" + maDT + "','" + maMH + "',N'" + stt + "')";
+            da.AC(sql);
+        }
     }
 }
