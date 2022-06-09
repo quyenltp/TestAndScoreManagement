@@ -16,6 +16,14 @@ namespace TestAndScore
         {
             InitializeComponent();
         }
+        public static int loaitk;
+        public static string matk;
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            this.Hide();
+            main.ShowDialog();
+        }
     }
 }

@@ -56,6 +56,22 @@
     <Compile Include="BaoCaoNam.Designer.cs">
       <DependentUpon>BaoCaoNam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Business\BaiThi.cs" />
+    <Compile Include="Business\BienBan.cs" />
+    <Compile Include="Business\CanBoCoiThi.cs" />
+    <Compile Include="Business\DeThiDapAn.cs" />
+    <Compile Include="Business\GiaoVienChamThi.cs" />
+    <Compile Include="Business\HocVien.cs" />
+    <Compile Include="Business\LichThi.cs" />
+    <Compile Include="Business\Lop.cs" />
+    <Compile Include="Business\TaiKhoan.cs" />
+    <Compile Include="Business\ThongKeKetQuaChamThi.cs" />
+    <Compile Include="Business\thongke_baithi.cs" />
+    <Compile Include="Business\thongke_bienbanvipham.cs" />
+    <Compile Include="Business\thongke_canbo.cs" />
+    <Compile Include="Business\thongke_diemthilop.cs" />
+    <Compile Include="Business\thongke_lichthi.cs" />
+    <Compile Include="DataAcess\Data.cs" />
     <Compile Include="DSDeThi.cs">
       <SubType>Form</SubType>
     </Compile>
