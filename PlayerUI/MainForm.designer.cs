@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.panelSoanThao = new System.Windows.Forms.Panel();
+            this.btn_SoanDeThi = new System.Windows.Forms.Button();
+            this.btnSoanCauHoi = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.btnCaiDat = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.btnChamThi = new System.Windows.Forms.Button();
-            this.panelSoanThao = new System.Windows.Forms.Panel();
-            this.btn_SoanDeThi = new System.Windows.Forms.Button();
-            this.btnSoanCauHoi = new System.Windows.Forms.Button();
             this.btnSoan = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.panelSoanThao.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -67,115 +67,6 @@
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(250, 573);
             this.panelSideMenu.TabIndex = 0;
-            // 
-            // btnCaiDat
-            // 
-            this.btnCaiDat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCaiDat.FlatAppearance.BorderSize = 0;
-            this.btnCaiDat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnCaiDat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnCaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaiDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaiDat.ForeColor = System.Drawing.Color.Black;
-            this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
-            this.btnCaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaiDat.Location = new System.Drawing.Point(0, 390);
-            this.btnCaiDat.Name = "btnCaiDat";
-            this.btnCaiDat.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnCaiDat.Size = new System.Drawing.Size(250, 45);
-            this.btnCaiDat.TabIndex = 10;
-            this.btnCaiDat.Text = "Cài Đặt";
-            this.btnCaiDat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaiDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCaiDat.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 528);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(250, 45);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = " Thoát";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongKe.FlatAppearance.BorderSize = 0;
-            this.btnThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.ForeColor = System.Drawing.Color.Black;
-            this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
-            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 345);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnThongKe.Size = new System.Drawing.Size(250, 45);
-            this.btnThongKe.TabIndex = 8;
-            this.btnThongKe.Text = "Báo Cáo Năm";
-            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThongKe.UseVisualStyleBackColor = true;
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
-            // 
-            // btnTraCuu
-            // 
-            this.btnTraCuu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTraCuu.FlatAppearance.BorderSize = 0;
-            this.btnTraCuu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnTraCuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.ForeColor = System.Drawing.Color.Black;
-            this.btnTraCuu.Image = ((System.Drawing.Image)(resources.GetObject("btnTraCuu.Image")));
-            this.btnTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraCuu.Location = new System.Drawing.Point(0, 300);
-            this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnTraCuu.Size = new System.Drawing.Size(250, 45);
-            this.btnTraCuu.TabIndex = 6;
-            this.btnTraCuu.Text = "Tra Cứu Đề Thi";
-            this.btnTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTraCuu.UseVisualStyleBackColor = true;
-            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
-            // 
-            // btnChamThi
-            // 
-            this.btnChamThi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnChamThi.FlatAppearance.BorderSize = 0;
-            this.btnChamThi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnChamThi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnChamThi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChamThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChamThi.ForeColor = System.Drawing.Color.Black;
-            this.btnChamThi.Image = ((System.Drawing.Image)(resources.GetObject("btnChamThi.Image")));
-            this.btnChamThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChamThi.Location = new System.Drawing.Point(0, 255);
-            this.btnChamThi.Name = "btnChamThi";
-            this.btnChamThi.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnChamThi.Size = new System.Drawing.Size(250, 45);
-            this.btnChamThi.TabIndex = 5;
-            this.btnChamThi.Text = " Ghi Nhận Chấm Thi";
-            this.btnChamThi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChamThi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnChamThi.UseVisualStyleBackColor = true;
-            this.btnChamThi.Click += new System.EventHandler(this.btnChamThi_Click);
             // 
             // panelSoanThao
             // 
@@ -226,50 +117,6 @@
             this.btnSoanCauHoi.UseVisualStyleBackColor = true;
             this.btnSoanCauHoi.Click += new System.EventHandler(this.btnSoanCauHoi_Click);
             // 
-            // btnSoan
-            // 
-            this.btnSoan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSoan.FlatAppearance.BorderSize = 0;
-            this.btnSoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnSoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnSoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSoan.ForeColor = System.Drawing.Color.Black;
-            this.btnSoan.Image = ((System.Drawing.Image)(resources.GetObject("btnSoan.Image")));
-            this.btnSoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSoan.Location = new System.Drawing.Point(0, 130);
-            this.btnSoan.Name = "btnSoan";
-            this.btnSoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnSoan.Size = new System.Drawing.Size(250, 45);
-            this.btnSoan.TabIndex = 3;
-            this.btnSoan.Text = " Soạn Thảo";
-            this.btnSoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSoan.UseVisualStyleBackColor = true;
-            this.btnSoan.Click += new System.EventHandler(this.btnSoan_Click);
-            // 
-            // btnTrangChu
-            // 
-            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTrangChu.FlatAppearance.BorderSize = 0;
-            this.btnTrangChu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnTrangChu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
-            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrangChu.ForeColor = System.Drawing.Color.Black;
-            this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
-            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 85);
-            this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnTrangChu.Size = new System.Drawing.Size(250, 45);
-            this.btnTrangChu.TabIndex = 1;
-            this.btnTrangChu.Text = " Trang Chủ";
-            this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTrangChu.UseVisualStyleBackColor = true;
-            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
-            // 
             // panelLogo
             // 
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -311,6 +158,159 @@
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(686, 573);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // btnCaiDat
+            // 
+            this.btnCaiDat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCaiDat.FlatAppearance.BorderSize = 0;
+            this.btnCaiDat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnCaiDat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnCaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaiDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaiDat.ForeColor = System.Drawing.Color.Black;
+            this.btnCaiDat.Image = global::PlayerUI.Properties.Resources.setting;
+            this.btnCaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCaiDat.Location = new System.Drawing.Point(0, 390);
+            this.btnCaiDat.Name = "btnCaiDat";
+            this.btnCaiDat.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnCaiDat.Size = new System.Drawing.Size(250, 45);
+            this.btnCaiDat.TabIndex = 10;
+            this.btnCaiDat.Text = "Cài Đặt";
+            this.btnCaiDat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCaiDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCaiDat.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.Image = global::PlayerUI.Properties.Resources.exit_icon;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 528);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(250, 45);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = " Thoát";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKe.FlatAppearance.BorderSize = 0;
+            this.btnThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.Black;
+            this.btnThongKe.Image = global::PlayerUI.Properties.Resources.thongke2;
+            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.Location = new System.Drawing.Point(0, 345);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnThongKe.Size = new System.Drawing.Size(250, 45);
+            this.btnThongKe.TabIndex = 8;
+            this.btnThongKe.Text = "Báo Cáo Năm";
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
+            // btnTraCuu
+            // 
+            this.btnTraCuu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTraCuu.FlatAppearance.BorderSize = 0;
+            this.btnTraCuu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnTraCuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuu.ForeColor = System.Drawing.Color.Black;
+            this.btnTraCuu.Image = global::PlayerUI.Properties.Resources.search2;
+            this.btnTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTraCuu.Location = new System.Drawing.Point(0, 300);
+            this.btnTraCuu.Name = "btnTraCuu";
+            this.btnTraCuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnTraCuu.Size = new System.Drawing.Size(250, 45);
+            this.btnTraCuu.TabIndex = 6;
+            this.btnTraCuu.Text = "Tra Cứu Đề Thi";
+            this.btnTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTraCuu.UseVisualStyleBackColor = true;
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
+            // 
+            // btnChamThi
+            // 
+            this.btnChamThi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnChamThi.FlatAppearance.BorderSize = 0;
+            this.btnChamThi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnChamThi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnChamThi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChamThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChamThi.ForeColor = System.Drawing.Color.Black;
+            this.btnChamThi.Image = global::PlayerUI.Properties.Resources.chamthi;
+            this.btnChamThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChamThi.Location = new System.Drawing.Point(0, 255);
+            this.btnChamThi.Name = "btnChamThi";
+            this.btnChamThi.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnChamThi.Size = new System.Drawing.Size(250, 45);
+            this.btnChamThi.TabIndex = 5;
+            this.btnChamThi.Text = " Ghi Nhận Chấm Thi";
+            this.btnChamThi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChamThi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnChamThi.UseVisualStyleBackColor = true;
+            this.btnChamThi.Click += new System.EventHandler(this.btnChamThi_Click);
+            // 
+            // btnSoan
+            // 
+            this.btnSoan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSoan.FlatAppearance.BorderSize = 0;
+            this.btnSoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnSoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnSoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSoan.ForeColor = System.Drawing.Color.Black;
+            this.btnSoan.Image = global::PlayerUI.Properties.Resources.edit;
+            this.btnSoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSoan.Location = new System.Drawing.Point(0, 130);
+            this.btnSoan.Name = "btnSoan";
+            this.btnSoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnSoan.Size = new System.Drawing.Size(250, 45);
+            this.btnSoan.TabIndex = 3;
+            this.btnSoan.Text = " Soạn Thảo";
+            this.btnSoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSoan.UseVisualStyleBackColor = true;
+            this.btnSoan.Click += new System.EventHandler(this.btnSoan_Click);
+            // 
+            // btnTrangChu
+            // 
+            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTrangChu.FlatAppearance.BorderSize = 0;
+            this.btnTrangChu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnTrangChu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(148)))), ((int)(((byte)(126)))));
+            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.Black;
+            this.btnTrangChu.Image = global::PlayerUI.Properties.Resources.home;
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 85);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnTrangChu.Size = new System.Drawing.Size(250, 45);
+            this.btnTrangChu.TabIndex = 1;
+            this.btnTrangChu.Text = " Trang Chủ";
+            this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTrangChu.UseVisualStyleBackColor = true;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // MainForm
             // 
