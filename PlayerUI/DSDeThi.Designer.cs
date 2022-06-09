@@ -42,17 +42,18 @@
             this.radioButton_Tuy_Chon = new System.Windows.Forms.RadioButton();
             this.radioButton_Tat_Ca = new System.Windows.Forms.RadioButton();
             this.panel_Selection = new System.Windows.Forms.Panel();
-            this.customTbx_Nam_Hoc = new CustomControls.CustomControls.CustomTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbx_Hinh_Thuc = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.customTbx_Ma_Mon = new CustomControls.CustomControls.CustomTextBox();
-            this.label_Ma_Mon_Hoc = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.customTbx_So_Cau_Hoi = new CustomControls.CustomControls.CustomTextBox();
             this.cbx_Hoc_Ki = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.customTbx_So_Cau_Hoi = new CustomControls.CustomControls.CustomTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.cbx_Hinh_Thuc = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.customTbx_Ma_Mon = new CustomControls.CustomControls.CustomTextBox();
+            this.customTbx_Nam_Hoc = new CustomControls.CustomControls.CustomTextBox();
+            this.label_Ma_Mon_Hoc = new System.Windows.Forms.Label();
+            this.checkBox_Lich = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Danh_Sach_De_Thi)).BeginInit();
             this.panelOptions.SuspendLayout();
             this.panel_Selection.SuspendLayout();
@@ -116,6 +117,7 @@
             // 
             this.dtPicker_Ngay_Thi.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.dtPicker_Ngay_Thi.BorderSize = 0;
+            this.dtPicker_Ngay_Thi.Checked = false;
             this.dtPicker_Ngay_Thi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.dtPicker_Ngay_Thi.Location = new System.Drawing.Point(420, 104);
             this.dtPicker_Ngay_Thi.MinimumSize = new System.Drawing.Size(4, 35);
@@ -236,6 +238,7 @@
             // panel_Selection
             // 
             this.panel_Selection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_Selection.Controls.Add(this.checkBox_Lich);
             this.panel_Selection.Controls.Add(this.label10);
             this.panel_Selection.Controls.Add(this.customTbx_So_Cau_Hoi);
             this.panel_Selection.Controls.Add(this.cbx_Hoc_Ki);
@@ -258,91 +261,37 @@
             this.panel_Selection.Size = new System.Drawing.Size(928, 144);
             this.panel_Selection.TabIndex = 12;
             // 
-            // customTbx_Nam_Hoc
+            // label10
             // 
-            this.customTbx_Nam_Hoc.BackColor = System.Drawing.SystemColors.Window;
-            this.customTbx_Nam_Hoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customTbx_Nam_Hoc.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTbx_Nam_Hoc.BorderRadius = 15;
-            this.customTbx_Nam_Hoc.BorderSize = 2;
-            this.customTbx_Nam_Hoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.customTbx_Nam_Hoc.ForeColor = System.Drawing.Color.DimGray;
-            this.customTbx_Nam_Hoc.Location = new System.Drawing.Point(115, 55);
-            this.customTbx_Nam_Hoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.customTbx_Nam_Hoc.Multiline = false;
-            this.customTbx_Nam_Hoc.Name = "customTbx_Nam_Hoc";
-            this.customTbx_Nam_Hoc.Padding = new System.Windows.Forms.Padding(7);
-            this.customTbx_Nam_Hoc.PasswordChar = false;
-            this.customTbx_Nam_Hoc.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTbx_Nam_Hoc.PlaceholderText = "";
-            this.customTbx_Nam_Hoc.Size = new System.Drawing.Size(127, 35);
-            this.customTbx_Nam_Hoc.TabIndex = 14;
-            this.customTbx_Nam_Hoc.Texts = "";
-            this.customTbx_Nam_Hoc.UnderlinedStyle = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.label10.Location = new System.Drawing.Point(244, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 24);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "phút";
             // 
-            // label7
+            // customTbx_So_Cau_Hoi
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 24);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Năm học:";
-            // 
-            // cbx_Hinh_Thuc
-            // 
-            this.cbx_Hinh_Thuc.FormattingEnabled = true;
-            this.cbx_Hinh_Thuc.Items.AddRange(new object[] {
-            "(Tất cả)",
-            "Có sử dụng tài liệu",
-            "Không sử dụng tài liệu"});
-            this.cbx_Hinh_Thuc.Location = new System.Drawing.Point(682, 13);
-            this.cbx_Hinh_Thuc.Name = "cbx_Hinh_Thuc";
-            this.cbx_Hinh_Thuc.Size = new System.Drawing.Size(237, 24);
-            this.cbx_Hinh_Thuc.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(555, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 24);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Hình thức thi:";
-            // 
-            // customTbx_Ma_Mon
-            // 
-            this.customTbx_Ma_Mon.BackColor = System.Drawing.SystemColors.Window;
-            this.customTbx_Ma_Mon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customTbx_Ma_Mon.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTbx_Ma_Mon.BorderRadius = 15;
-            this.customTbx_Ma_Mon.BorderSize = 2;
-            this.customTbx_Ma_Mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.customTbx_Ma_Mon.ForeColor = System.Drawing.Color.DimGray;
-            this.customTbx_Ma_Mon.Location = new System.Drawing.Point(420, 55);
-            this.customTbx_Ma_Mon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.customTbx_Ma_Mon.Multiline = false;
-            this.customTbx_Ma_Mon.Name = "customTbx_Ma_Mon";
-            this.customTbx_Ma_Mon.Padding = new System.Windows.Forms.Padding(7);
-            this.customTbx_Ma_Mon.PasswordChar = false;
-            this.customTbx_Ma_Mon.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTbx_Ma_Mon.PlaceholderText = "";
-            this.customTbx_Ma_Mon.Size = new System.Drawing.Size(131, 35);
-            this.customTbx_Ma_Mon.TabIndex = 10;
-            this.customTbx_Ma_Mon.Texts = "";
-            this.customTbx_Ma_Mon.UnderlinedStyle = false;
-            // 
-            // label_Ma_Mon_Hoc
-            // 
-            this.label_Ma_Mon_Hoc.AutoSize = true;
-            this.label_Ma_Mon_Hoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Ma_Mon_Hoc.Location = new System.Drawing.Point(300, 61);
-            this.label_Ma_Mon_Hoc.Name = "label_Ma_Mon_Hoc";
-            this.label_Ma_Mon_Hoc.Size = new System.Drawing.Size(121, 24);
-            this.label_Ma_Mon_Hoc.TabIndex = 9;
-            this.label_Ma_Mon_Hoc.Text = "Mã môn học:";
+            this.customTbx_So_Cau_Hoi.BackColor = System.Drawing.SystemColors.Window;
+            this.customTbx_So_Cau_Hoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customTbx_So_Cau_Hoi.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.customTbx_So_Cau_Hoi.BorderRadius = 15;
+            this.customTbx_So_Cau_Hoi.BorderSize = 2;
+            this.customTbx_So_Cau_Hoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTbx_So_Cau_Hoi.ForeColor = System.Drawing.Color.DimGray;
+            this.customTbx_So_Cau_Hoi.Location = new System.Drawing.Point(115, 104);
+            this.customTbx_So_Cau_Hoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customTbx_So_Cau_Hoi.Multiline = false;
+            this.customTbx_So_Cau_Hoi.Name = "customTbx_So_Cau_Hoi";
+            this.customTbx_So_Cau_Hoi.Padding = new System.Windows.Forms.Padding(7);
+            this.customTbx_So_Cau_Hoi.PasswordChar = false;
+            this.customTbx_So_Cau_Hoi.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTbx_So_Cau_Hoi.PlaceholderText = "";
+            this.customTbx_So_Cau_Hoi.Size = new System.Drawing.Size(127, 35);
+            this.customTbx_So_Cau_Hoi.TabIndex = 18;
+            this.customTbx_So_Cau_Hoi.Texts = "";
+            this.customTbx_So_Cau_Hoi.UnderlinedStyle = false;
             // 
             // cbx_Hoc_Ki
             // 
@@ -367,28 +316,6 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Học kì:";
             // 
-            // customTbx_So_Cau_Hoi
-            // 
-            this.customTbx_So_Cau_Hoi.BackColor = System.Drawing.SystemColors.Window;
-            this.customTbx_So_Cau_Hoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customTbx_So_Cau_Hoi.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTbx_So_Cau_Hoi.BorderRadius = 15;
-            this.customTbx_So_Cau_Hoi.BorderSize = 2;
-            this.customTbx_So_Cau_Hoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.customTbx_So_Cau_Hoi.ForeColor = System.Drawing.Color.DimGray;
-            this.customTbx_So_Cau_Hoi.Location = new System.Drawing.Point(115, 104);
-            this.customTbx_So_Cau_Hoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.customTbx_So_Cau_Hoi.Multiline = false;
-            this.customTbx_So_Cau_Hoi.Name = "customTbx_So_Cau_Hoi";
-            this.customTbx_So_Cau_Hoi.Padding = new System.Windows.Forms.Padding(7);
-            this.customTbx_So_Cau_Hoi.PasswordChar = false;
-            this.customTbx_So_Cau_Hoi.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTbx_So_Cau_Hoi.PlaceholderText = "";
-            this.customTbx_So_Cau_Hoi.Size = new System.Drawing.Size(127, 35);
-            this.customTbx_So_Cau_Hoi.TabIndex = 18;
-            this.customTbx_So_Cau_Hoi.Texts = "";
-            this.customTbx_So_Cau_Hoi.UnderlinedStyle = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -399,15 +326,102 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Số câu hỏi:";
             // 
-            // label10
+            // cbx_Hinh_Thuc
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label10.Location = new System.Drawing.Point(244, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 24);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "phút";
+            this.cbx_Hinh_Thuc.FormattingEnabled = true;
+            this.cbx_Hinh_Thuc.Items.AddRange(new object[] {
+            "(Tất cả)",
+            "Có sử dụng tài liệu",
+            "Không sử dụng tài liệu"});
+            this.cbx_Hinh_Thuc.Location = new System.Drawing.Point(682, 13);
+            this.cbx_Hinh_Thuc.Name = "cbx_Hinh_Thuc";
+            this.cbx_Hinh_Thuc.Size = new System.Drawing.Size(237, 24);
+            this.cbx_Hinh_Thuc.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(555, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 24);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Hình thức thi:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(7, 61);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 24);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Năm học:";
+            // 
+            // customTbx_Ma_Mon
+            // 
+            this.customTbx_Ma_Mon.BackColor = System.Drawing.SystemColors.Window;
+            this.customTbx_Ma_Mon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customTbx_Ma_Mon.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.customTbx_Ma_Mon.BorderRadius = 15;
+            this.customTbx_Ma_Mon.BorderSize = 2;
+            this.customTbx_Ma_Mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTbx_Ma_Mon.ForeColor = System.Drawing.Color.DimGray;
+            this.customTbx_Ma_Mon.Location = new System.Drawing.Point(420, 55);
+            this.customTbx_Ma_Mon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customTbx_Ma_Mon.Multiline = false;
+            this.customTbx_Ma_Mon.Name = "customTbx_Ma_Mon";
+            this.customTbx_Ma_Mon.Padding = new System.Windows.Forms.Padding(7);
+            this.customTbx_Ma_Mon.PasswordChar = false;
+            this.customTbx_Ma_Mon.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTbx_Ma_Mon.PlaceholderText = "";
+            this.customTbx_Ma_Mon.Size = new System.Drawing.Size(131, 35);
+            this.customTbx_Ma_Mon.TabIndex = 10;
+            this.customTbx_Ma_Mon.Texts = "";
+            this.customTbx_Ma_Mon.UnderlinedStyle = false;
+            // 
+            // customTbx_Nam_Hoc
+            // 
+            this.customTbx_Nam_Hoc.BackColor = System.Drawing.SystemColors.Window;
+            this.customTbx_Nam_Hoc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customTbx_Nam_Hoc.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.customTbx_Nam_Hoc.BorderRadius = 15;
+            this.customTbx_Nam_Hoc.BorderSize = 2;
+            this.customTbx_Nam_Hoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTbx_Nam_Hoc.ForeColor = System.Drawing.Color.DimGray;
+            this.customTbx_Nam_Hoc.Location = new System.Drawing.Point(115, 55);
+            this.customTbx_Nam_Hoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customTbx_Nam_Hoc.Multiline = false;
+            this.customTbx_Nam_Hoc.Name = "customTbx_Nam_Hoc";
+            this.customTbx_Nam_Hoc.Padding = new System.Windows.Forms.Padding(7);
+            this.customTbx_Nam_Hoc.PasswordChar = false;
+            this.customTbx_Nam_Hoc.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTbx_Nam_Hoc.PlaceholderText = "";
+            this.customTbx_Nam_Hoc.Size = new System.Drawing.Size(127, 35);
+            this.customTbx_Nam_Hoc.TabIndex = 14;
+            this.customTbx_Nam_Hoc.Texts = "";
+            this.customTbx_Nam_Hoc.UnderlinedStyle = false;
+            // 
+            // label_Ma_Mon_Hoc
+            // 
+            this.label_Ma_Mon_Hoc.AutoSize = true;
+            this.label_Ma_Mon_Hoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Ma_Mon_Hoc.Location = new System.Drawing.Point(300, 61);
+            this.label_Ma_Mon_Hoc.Name = "label_Ma_Mon_Hoc";
+            this.label_Ma_Mon_Hoc.Size = new System.Drawing.Size(121, 24);
+            this.label_Ma_Mon_Hoc.TabIndex = 9;
+            this.label_Ma_Mon_Hoc.Text = "Mã môn học:";
+            // 
+            // checkBox_Lich
+            // 
+            this.checkBox_Lich.AutoSize = true;
+            this.checkBox_Lich.Location = new System.Drawing.Point(643, 111);
+            this.checkBox_Lich.Name = "checkBox_Lich";
+            this.checkBox_Lich.Size = new System.Drawing.Size(88, 21);
+            this.checkBox_Lich.TabIndex = 20;
+            this.checkBox_Lich.Text = "Chọn lịch";
+            this.checkBox_Lich.UseVisualStyleBackColor = true;
+            this.checkBox_Lich.CheckedChanged += new System.EventHandler(this.checkBox_Lich_CheckedChanged);
             // 
             // DSDeThi
             // 
@@ -460,5 +474,6 @@
         private CustomControls.CustomControls.CustomTextBox customTbx_So_Cau_Hoi;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox checkBox_Lich;
     }
 }

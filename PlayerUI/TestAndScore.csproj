@@ -57,6 +57,7 @@
       <DependentUpon>BaoCaoNam.cs</DependentUpon>
     </Compile>
     <Compile Include="CSDL\DanhSachDeThi.cs" />
+    <Compile Include="CSDL\DeThi.cs" />
     <Compile Include="CSDL\TaiKhoan.cs" />
     <Compile Include="CSDL\CauHoi.cs" />
     <Compile Include="Data\Data.cs" />
