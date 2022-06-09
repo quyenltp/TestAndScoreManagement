@@ -82,7 +82,6 @@
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.TextColor = System.Drawing.Color.White;
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label1
             // 
