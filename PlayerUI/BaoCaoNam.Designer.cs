@@ -58,11 +58,11 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(254, 83);
+            this.label2.Location = new System.Drawing.Point(230, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 24);
+            this.label2.Size = new System.Drawing.Size(92, 24);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Năm:";
+            this.label2.Text = "Năm học:";
             // 
             // labelTongDeThi
             // 
@@ -88,6 +88,8 @@
             // 
             // dataGridViewBaoCaoNam
             // 
+            this.dataGridViewBaoCaoNam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewBaoCaoNam.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewBaoCaoNam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBaoCaoNam.Location = new System.Drawing.Point(12, 224);
             this.dataGridViewBaoCaoNam.Name = "dataGridViewBaoCaoNam";
@@ -119,9 +121,9 @@
             // cbx_Nam
             // 
             this.cbx_Nam.FormattingEnabled = true;
-            this.cbx_Nam.Location = new System.Drawing.Point(316, 82);
+            this.cbx_Nam.Location = new System.Drawing.Point(326, 82);
             this.cbx_Nam.Name = "cbx_Nam";
-            this.cbx_Nam.Size = new System.Drawing.Size(104, 24);
+            this.cbx_Nam.Size = new System.Drawing.Size(148, 24);
             this.cbx_Nam.TabIndex = 8;
             // 
             // lb_Tong_De

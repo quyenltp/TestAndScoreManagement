@@ -29,7 +29,6 @@ namespace TestAndScore.Data
                 {
                     MessageBox.Show("Lỗi!\nLoad dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
                 return dt;
             }
         }
