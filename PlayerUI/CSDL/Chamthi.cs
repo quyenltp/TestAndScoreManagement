@@ -42,10 +42,12 @@ namespace TestAndScore.Data
             return da.GET(sql);
         }
 
-        public void them(string mssv, float diemthiso, string diemthichu, string ghichu)
+        public void them(string mssv, float diemthiso, string diemthichu, string ghichu, string hoten)
         {
-            string sql = "insert into KETQUATHI values(N'" + mssv + "',N'" + "DT" + "','" + 1 + "',N'" + diemthiso + "',N'" + diemthichu + "',N' " + ghichu + "',) ";
+            string sql = "insert into KETQUATHI values(N'" + mssv + "',N'" + "DT" + "','" + 1 + "',N'" + diemthiso + "',N'" + diemthichu + "',N' " + ghichu + "') ";
+            string sql1 = "insert into THISINH values(N'" + mssv + "',N'" + hoten + "',N'" + "L3" + "')";
             da.AC(sql);
+            da.AC(sql1);
         }
     }
 }
