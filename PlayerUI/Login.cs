@@ -35,6 +35,8 @@ namespace TestAndScore
                 {
                     MessageBox.Show("Chào Mừng " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
                     MainForm f = new MainForm();
+                    f.cc(1);
+                    f.phanquyen();
                     f.Show();
                     Hide();
                     //Close();
@@ -44,6 +46,7 @@ namespace TestAndScore
                 {
                     MessageBox.Show("Chào Mừng == " + txtUsername.Texts + "== Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
                     MainForm f = new MainForm();
+                    f.cc(2);
                     f.Show();
                     Hide();
                     //Close();

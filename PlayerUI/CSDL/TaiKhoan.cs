@@ -16,7 +16,7 @@ namespace TestAndScore.Data
 
         public DataTable hienthi()
         {
-            string sql = "select * from NGUOIDUNG";
+            string sql = "SELECT tendangnhap as N'Tên đăng nhập', matkhau as N'Mật khẩu', tennguoidung as N'Tên người dùng',loaitaikhoan as N'Phân quyền' FROM DBO.NGUOIDUNG ORDER BY tendangnhap";
             return da.GET(sql);
         }
         public DataTable hienthi(string tentk)
