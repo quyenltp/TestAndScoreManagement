@@ -79,6 +79,12 @@
     <Compile Include="DSCauhoi.Designer.cs">
       <DependentUpon>DSCauhoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hethong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hethong.Designer.cs">
+      <DependentUpon>Hethong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DSCauhoi.resx">
       <DependentUpon>DSCauhoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hethong.resx">
+      <DependentUpon>Hethong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PlayerUI;
 
 namespace TestAndScore
 {
     public partial class MainForm : Form
     {
+        public static int check = 0;
         public MainForm()
         {
             InitializeComponent();
             hideSubMenu();
             openChildForm(new TrangChu());
+            //phanquyen();
         }
 
         private void hideSubMenu()
@@ -35,8 +38,23 @@ namespace TestAndScore
             else
                 subMenu.Visible = false;
         }
+        public void cc(int a)
+            {
+            check = a;
+            MessageBox.Show(check.ToString());
+            }
 
-
+        public void phanquyen()
+        {
+            if(check == 2)
+            {
+                btnCaiDat.Visible = true;
+            }
+            else
+            {
+                btnCaiDat.Visible = false;
+            }
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             Login lg = new Login();
@@ -109,7 +127,7 @@ namespace TestAndScore
 
         private void btnCaiDat_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new NguoiDung());
         }
     }
 }

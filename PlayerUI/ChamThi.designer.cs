@@ -137,11 +137,11 @@
             this.customComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(185, 37);
+            this.customComboBox1.Location = new System.Drawing.Point(176, 37);
             this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
             this.customComboBox1.Name = "customComboBox1";
             this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox1.Size = new System.Drawing.Size(542, 30);
+            this.customComboBox1.Size = new System.Drawing.Size(552, 30);
             this.customComboBox1.TabIndex = 29;
             this.customComboBox1.Texts = "";
             // 
