@@ -20,8 +20,7 @@ namespace TestAndScore
         }
 
         Dethi a = new Dethi();
-        Boolean isChecked;
-        string ngaythi;
+        string dieukien;
 
         private void Check_Tuy_Chon()
         {
@@ -38,6 +37,7 @@ namespace TestAndScore
             cbx_Hinh_Thuc.SelectedIndex = cbx_Hoc_Ki.SelectedIndex = 0;
             checkBox_Lich.Checked = false;
             dtPicker_Ngay_Thi.Enabled = false;
+            dieukien = "";
             Check_Tuy_Chon();
         }
 
@@ -54,34 +54,47 @@ namespace TestAndScore
             }
             else
             {
-                if (!isChecked) ngaythi = "";
-                else ngaythi = dtPicker_Ngay_Thi.Value.ToString("MM/dd/yyyy");
-                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiChonLoc(customTbx_Ma_De.Texts, customTbx_Ma_Mon.Texts, cbx_Hinh_Thuc.Text, cbx_Hoc_Ki.Text, customTbx_Nam_Hoc.Texts, customTbx_Thoi_Luong.Texts, customTbx_So_Cau_Hoi.Texts, ngaythi);
+                dieukien = "";
+                Duyet_Dieu_Kien();
+                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiChonLoc(dieukien);
             }
 
 
             dataGridView_Danh_Sach_De_Thi.ReadOnly = true;
 
-            int totalRowHeight = dataGridView_Danh_Sach_De_Thi.ColumnHeadersHeight;
-            foreach (DataGridViewRow row in dataGridView_Danh_Sach_De_Thi.Rows)
-                totalRowHeight += row.Height;
-            dataGridView_Danh_Sach_De_Thi.Height = totalRowHeight;
-            this.Height = dataGridView_Danh_Sach_De_Thi.Height + 100;
-
-            dataGridView_Danh_Sach_De_Thi.AutoResizeColumns();
-            dataGridView_Danh_Sach_De_Thi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView_Danh_Sach_De_Thi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView_Danh_Sach_De_Thi.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
         private void checkBox_Lich_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_Lich.Checked == true)
             {
-                dtPicker_Ngay_Thi.Enabled = isChecked = true;
+                dtPicker_Ngay_Thi.Enabled = true;
             }
             else
             {
-                dtPicker_Ngay_Thi.Enabled = isChecked = false;
+                dtPicker_Ngay_Thi.Enabled = false;
             }
+        }
+
+
+        private void Duyet_Dieu_Kien()
+        {
+            if (customTbx_Thoi_Luong.Texts != "") dieukien += "thoiluong = " + "'" + customTbx_Thoi_Luong.Texts + "'" + " AND ";
+            if (customTbx_Nam_Hoc.Texts != "") dieukien += "namhoc = " + "'" + customTbx_Nam_Hoc.Texts + "'" + " AND ";
+            if (customTbx_So_Cau_Hoi.Texts != "") dieukien += "socauhoi = " + "'" + customTbx_So_Cau_Hoi.Texts + "'" + " AND ";
+            if (customTbx_Ma_De.Texts != "") dieukien += "maDT = " + "'" + customTbx_Ma_De.Texts + "'" + " AND ";
+            if (customTbx_Ma_Mon.Texts != "") dieukien += "maMH = " + "'" + customTbx_Ma_Mon.Texts + "'" + " AND ";
+            if (cbx_Hinh_Thuc.Text != "(Tất cả)") dieukien += "hinhthuc = " + "N'" + cbx_Hinh_Thuc.Text + "'" + " AND ";
+            if (cbx_Hoc_Ki.Text != "(Tất cả)") dieukien += "hocki = " + "N'" + cbx_Hoc_Ki.Text + "'" + " AND ";
+            if (dtPicker_Ngay_Thi.Enabled == true) dieukien += "thoiluong = " + "'" + dtPicker_Ngay_Thi.Value.ToString("MM/dd/yyyy") + "'" + " AND ";
+            string str1 = "";
+            for (int i = 0; i < dieukien.Length - 5; ++i)
+            {
+                str1 += dieukien[i];
+            }
+            dieukien = str1;
         }
     }
 }

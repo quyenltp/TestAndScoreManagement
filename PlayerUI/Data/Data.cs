@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace TestAndScore.Data
 {
@@ -16,21 +17,32 @@ namespace TestAndScore.Data
         }
         public DataTable GET(string sql)
         {
-            SqlConnection con = connect();
-            
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            return dt;
+            using (SqlConnection con = connect())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                DataTable dt = new DataTable();
+                try 
+                {
+                    da.Fill(dt);
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi!\nLoad dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+                return dt;
+            }
         }
         public void AC(string sql)
         {
-            SqlConnection con = connect();
-           
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Connection.Open();
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
+            using (SqlConnection con = connect())
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+            }
+
         }
         
     }

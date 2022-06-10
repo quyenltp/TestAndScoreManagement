@@ -42,6 +42,7 @@
             this.radioButton_Tuy_Chon = new System.Windows.Forms.RadioButton();
             this.radioButton_Tat_Ca = new System.Windows.Forms.RadioButton();
             this.panel_Selection = new System.Windows.Forms.Panel();
+            this.checkBox_Lich = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.customTbx_So_Cau_Hoi = new CustomControls.CustomControls.CustomTextBox();
             this.cbx_Hoc_Ki = new System.Windows.Forms.ComboBox();
@@ -53,7 +54,6 @@
             this.customTbx_Ma_Mon = new CustomControls.CustomControls.CustomTextBox();
             this.customTbx_Nam_Hoc = new CustomControls.CustomControls.CustomTextBox();
             this.label_Ma_Mon_Hoc = new System.Windows.Forms.Label();
-            this.checkBox_Lich = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Danh_Sach_De_Thi)).BeginInit();
             this.panelOptions.SuspendLayout();
             this.panel_Selection.SuspendLayout();
@@ -75,6 +75,7 @@
             // dataGridView_Danh_Sach_De_Thi
             // 
             this.dataGridView_Danh_Sach_De_Thi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_Danh_Sach_De_Thi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView_Danh_Sach_De_Thi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Danh_Sach_De_Thi.Location = new System.Drawing.Point(12, 299);
             this.dataGridView_Danh_Sach_De_Thi.Name = "dataGridView_Danh_Sach_De_Thi";
@@ -261,6 +262,17 @@
             this.panel_Selection.Size = new System.Drawing.Size(928, 144);
             this.panel_Selection.TabIndex = 12;
             // 
+            // checkBox_Lich
+            // 
+            this.checkBox_Lich.AutoSize = true;
+            this.checkBox_Lich.Location = new System.Drawing.Point(643, 111);
+            this.checkBox_Lich.Name = "checkBox_Lich";
+            this.checkBox_Lich.Size = new System.Drawing.Size(88, 21);
+            this.checkBox_Lich.TabIndex = 20;
+            this.checkBox_Lich.Text = "Chọn lịch";
+            this.checkBox_Lich.UseVisualStyleBackColor = true;
+            this.checkBox_Lich.CheckedChanged += new System.EventHandler(this.checkBox_Lich_CheckedChanged);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -411,17 +423,6 @@
             this.label_Ma_Mon_Hoc.Size = new System.Drawing.Size(121, 24);
             this.label_Ma_Mon_Hoc.TabIndex = 9;
             this.label_Ma_Mon_Hoc.Text = "Mã môn học:";
-            // 
-            // checkBox_Lich
-            // 
-            this.checkBox_Lich.AutoSize = true;
-            this.checkBox_Lich.Location = new System.Drawing.Point(643, 111);
-            this.checkBox_Lich.Name = "checkBox_Lich";
-            this.checkBox_Lich.Size = new System.Drawing.Size(88, 21);
-            this.checkBox_Lich.TabIndex = 20;
-            this.checkBox_Lich.Text = "Chọn lịch";
-            this.checkBox_Lich.UseVisualStyleBackColor = true;
-            this.checkBox_Lich.CheckedChanged += new System.EventHandler(this.checkBox_Lich_CheckedChanged);
             // 
             // DSDeThi
             // 

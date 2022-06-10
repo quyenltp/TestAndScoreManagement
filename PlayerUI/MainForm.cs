@@ -110,10 +110,5 @@ namespace TestAndScore
         {
             openChildForm(new BaoCaoNam());
         }
-
-        private void btnCaiDat_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
