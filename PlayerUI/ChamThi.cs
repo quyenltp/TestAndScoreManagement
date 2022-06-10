@@ -44,7 +44,7 @@ namespace TestAndScore
             try
             {
                 float b = float.Parse(customTextBox6.Texts);
-                ct.them(customComboBox1.Texts, b, customTextBox7.Texts, customTextBox8.Texts);
+                ct.them(customTextBox1.Texts, b, customTextBox7.Texts, customTextBox8.Texts, customTextBox5.Texts);
                 MessageBox.Show("Thêm chấm thi mới thành công");
 
             }
@@ -53,16 +53,6 @@ namespace TestAndScore
                 MessageBox.Show("Thêm chấm thi mới thất bại");
             }
 
-        }
-
-        private void customComboBox1_Load(object sender, EventArgs e)
-        {
-            for (int j = 0; j < ct.hienthithisinh().Rows.Count; j++)
-
-            {
-                string text = ct.hienthithisinh().Rows[j]["mssv"].ToString();
-                this.customComboBox1.Items.Add(text);
-            }
         }
 
         private void customComboBox4_Load(object sender, EventArgs e)
