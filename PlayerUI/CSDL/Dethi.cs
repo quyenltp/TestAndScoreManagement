@@ -38,5 +38,19 @@ namespace TestAndScore.Data
             string sql = "insert into CHITIETDETHI values('" + maDT + "','" + maMH + "',N'" + stt + "')";
             da.AC(sql);
         }
+
+        public DataTable HienThiTatCa()
+        {
+            string sql = "SELECT maDT as N'Mã đề thi', maMH as N'Mã môn học', hinhthuc as N'Hình thức thi',hocki as N'Học kỳ', namhoc as N'Năm học', thoiluong as N'Thời lượng', socauhoi as N'Số câu hỏi', ngaythi as N'Ngày thi' FROM DBO.DETHI ORDER BY ngaythi";
+            return da.GET(sql);
+        }
+        public DataTable HienThiChonLoc(string dk)
+        {
+            string sql = "SELECT maDT as N'Mã đề thi'," +
+                " maMH as N'Mã môn học', hinhthuc as N'Hình thức thi',hocki as N'Học kỳ '," +
+                " namhoc as N'Năm học', thoiluong as N'Thời lượng', socauhoi as N'Số câu hỏi'," +
+                " ngaythi as N'Ngày thi' FROM DBO.DETHI WHERE " + dk;
+            return da.GET(sql);
+        }
     }
 }

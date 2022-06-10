@@ -33,8 +33,10 @@
             this.labelTongDeThi = new System.Windows.Forms.Label();
             this.labelTongBaiCham = new System.Windows.Forms.Label();
             this.dataGridViewBaoCaoNam = new System.Windows.Forms.DataGridView();
-            this.txtNam = new CustomControls.CustomControls.CustomTextBox();
             this.btnTraCuu = new CustomControls.CustomControls.CustomButton();
+            this.cbx_Nam = new System.Windows.Forms.ComboBox();
+            this.lb_Tong_De = new System.Windows.Forms.Label();
+            this.lb_Tong_Cham = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBaoCaoNam)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(254, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 22);
+            this.label2.Size = new System.Drawing.Size(55, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Năm:";
             // 
@@ -69,7 +71,7 @@
             this.labelTongDeThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTongDeThi.Location = new System.Drawing.Point(62, 188);
             this.labelTongDeThi.Name = "labelTongDeThi";
-            this.labelTongDeThi.Size = new System.Drawing.Size(130, 22);
+            this.labelTongDeThi.Size = new System.Drawing.Size(137, 24);
             this.labelTongDeThi.TabIndex = 3;
             this.labelTongDeThi.Text = "Tổng số đề thi:";
             // 
@@ -80,7 +82,7 @@
             this.labelTongBaiCham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTongBaiCham.Location = new System.Drawing.Point(438, 188);
             this.labelTongBaiCham.Name = "labelTongBaiCham";
-            this.labelTongBaiCham.Size = new System.Drawing.Size(158, 22);
+            this.labelTongBaiCham.Size = new System.Drawing.Size(167, 24);
             this.labelTongBaiCham.TabIndex = 4;
             this.labelTongBaiCham.Text = "Tổng số bài chấm:";
             // 
@@ -93,28 +95,6 @@
             this.dataGridViewBaoCaoNam.RowTemplate.Height = 24;
             this.dataGridViewBaoCaoNam.Size = new System.Drawing.Size(663, 339);
             this.dataGridViewBaoCaoNam.TabIndex = 5;
-            // 
-            // txtNam
-            // 
-            this.txtNam.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNam.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.txtNam.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtNam.BorderRadius = 15;
-            this.txtNam.BorderSize = 2;
-            this.txtNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtNam.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNam.Location = new System.Drawing.Point(312, 70);
-            this.txtNam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtNam.Multiline = false;
-            this.txtNam.Name = "txtNam";
-            this.txtNam.Padding = new System.Windows.Forms.Padding(7);
-            this.txtNam.PasswordChar = false;
-            this.txtNam.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNam.PlaceholderText = "";
-            this.txtNam.Size = new System.Drawing.Size(116, 35);
-            this.txtNam.TabIndex = 6;
-            this.txtNam.Texts = "";
-            this.txtNam.UnderlinedStyle = false;
             // 
             // btnTraCuu
             // 
@@ -134,6 +114,31 @@
             this.btnTraCuu.Text = "Xem báo cáo";
             this.btnTraCuu.TextColor = System.Drawing.Color.White;
             this.btnTraCuu.UseVisualStyleBackColor = false;
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
+            // 
+            // cbx_Nam
+            // 
+            this.cbx_Nam.FormattingEnabled = true;
+            this.cbx_Nam.Location = new System.Drawing.Point(316, 82);
+            this.cbx_Nam.Name = "cbx_Nam";
+            this.cbx_Nam.Size = new System.Drawing.Size(104, 24);
+            this.cbx_Nam.TabIndex = 8;
+            // 
+            // lb_Tong_De
+            // 
+            this.lb_Tong_De.AutoSize = true;
+            this.lb_Tong_De.Location = new System.Drawing.Point(200, 190);
+            this.lb_Tong_De.Name = "lb_Tong_De";
+            this.lb_Tong_De.Size = new System.Drawing.Size(0, 17);
+            this.lb_Tong_De.TabIndex = 9;
+            // 
+            // lb_Tong_Cham
+            // 
+            this.lb_Tong_Cham.AutoSize = true;
+            this.lb_Tong_Cham.Location = new System.Drawing.Point(605, 190);
+            this.lb_Tong_Cham.Name = "lb_Tong_Cham";
+            this.lb_Tong_Cham.Size = new System.Drawing.Size(0, 17);
+            this.lb_Tong_Cham.TabIndex = 10;
             // 
             // BaoCaoNam
             // 
@@ -141,8 +146,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(687, 575);
+            this.Controls.Add(this.lb_Tong_Cham);
+            this.Controls.Add(this.lb_Tong_De);
+            this.Controls.Add(this.cbx_Nam);
             this.Controls.Add(this.btnTraCuu);
-            this.Controls.Add(this.txtNam);
             this.Controls.Add(this.dataGridViewBaoCaoNam);
             this.Controls.Add(this.labelTongBaiCham);
             this.Controls.Add(this.labelTongDeThi);
@@ -166,7 +173,9 @@
         private System.Windows.Forms.Label labelTongDeThi;
         private System.Windows.Forms.Label labelTongBaiCham;
         private System.Windows.Forms.DataGridView dataGridViewBaoCaoNam;
-        private CustomControls.CustomControls.CustomTextBox txtNam;
         private CustomControls.CustomControls.CustomButton btnTraCuu;
+        private System.Windows.Forms.ComboBox cbx_Nam;
+        private System.Windows.Forms.Label lb_Tong_De;
+        private System.Windows.Forms.Label lb_Tong_Cham;
     }
 }
