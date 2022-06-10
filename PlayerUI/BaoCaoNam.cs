@@ -61,11 +61,11 @@ namespace TestAndScore
                 DataTable da = new DataTable();
                 DataTable ds_mon = listBaiCham.DanhSachMonHoc();
 
-                da.Columns.Add("TenMonHoc", typeof(string));
-                da.Columns.Add("SoLuongBaiThi", typeof(int));
-                da.Columns.Add("SoLuongBaiCham", typeof(int));
-                da.Columns.Add("TiLeDeThi(%)", typeof(float));
-                da.Columns.Add("TiLeDeCham(%)", typeof(float));
+                da.Columns.Add("Tên môn học", typeof(string));
+                da.Columns.Add("Số lượng bài thi", typeof(int));
+                da.Columns.Add("Số lượng bài chấm", typeof(int));
+                da.Columns.Add("Tỉ lệ bài thi(%)", typeof(float));
+                da.Columns.Add("Tỉ lệ bài chấm(%)", typeof(float));
 
                 for (int i = 0; i < ds_mon.Rows.Count; ++i)
                 {

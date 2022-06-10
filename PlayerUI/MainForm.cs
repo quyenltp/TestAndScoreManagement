@@ -126,7 +126,7 @@ namespace TestAndScore
 
         private void btnCaiDat_Click(object sender, EventArgs e)
         {
-            openChildForm(new NguoiDung());
+            openChildForm(new SystemForm());
         }
     }
 }

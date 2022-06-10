@@ -47,9 +47,9 @@ namespace TestAndScore.Data
             string sql = "insert into NGUOIDUNG values(N'" + tentk + "','" + mk + "',N'" + tendung + "','" + loai + "') ";
             da.AC(sql);
         }
-        public void sua(string tentk, string mk,string tennguoidung)
+        public void sua(string tentk, string mk,string tennguoidung, int i)
         {
-            string sql = "update NGUOIDUNG set matkhau='" + mk + "',tennguoidung=N'" + tennguoidung + "' where tendangnhap='" + tentk + "'";
+            string sql = "update NGUOIDUNG set matkhau='" + mk + "', loaitaikhoan= '" + i + "',tennguoidung=N'" + tennguoidung + "' where tendangnhap='" + tentk + "'";
             da.AC(sql);
         }
         public void xoa(string tentk)

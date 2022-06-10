@@ -41,9 +41,11 @@ namespace PlayerUI
 
         private void DSCauHoi_Load(object sender, EventArgs e)
         {
-            //dataGridView1.AutoGenerateColumns = false;           
+            //dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=LAPTOP-P3AC0C24\SQLEXPRESS;Initial Catalog=RADEVACHAMTHI;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI5;Integrated Security=True";
             con.Open();
             string sql = "select * from CAUHOI where maMH like '%" + a + "%'";
             DataSet ds = new DataSet();
