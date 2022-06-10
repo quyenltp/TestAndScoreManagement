@@ -57,7 +57,7 @@ namespace TestAndScore.Data
             string sql = "SELECT maDT as N'Mã đề thi'," +
                 " maMH as N'Mã môn học', hinhthuc as N'Hình thức thi',hocki as N'Học kỳ '," +
                 " namhoc as N'Năm học', thoiluong as N'Thời lượng', socauhoi as N'Số câu hỏi'," +
-                " ngaythi as N'Ngày thi' FROM DBO.DETHI WHERE " + dk;
+                " ngaythi as N'Ngày thi' FROM DBO.DETHI " + ((dk == "")? "":("WHERE " + dk));
             return da.GET(sql);
         }
     }
