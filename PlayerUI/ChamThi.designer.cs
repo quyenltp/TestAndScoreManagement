@@ -26,6 +26,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.customButton1 = new CustomControls.CustomControls.CustomButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customTextBox1 = new CustomControls.CustomControls.CustomTextBox();
             this.customTextBox8 = new CustomControls.CustomControls.CustomTextBox();
             this.customTextBox7 = new CustomControls.CustomControls.CustomTextBox();
             this.customTextBox6 = new CustomControls.CustomControls.CustomTextBox();
@@ -39,7 +40,6 @@
             this.customComboBox2 = new CustomControls.CustomControls.CustomComboBox();
             this.customComboBox3 = new CustomControls.CustomControls.CustomComboBox();
             this.customComboBox4 = new CustomControls.CustomControls.CustomComboBox();
-            this.customTextBox1 = new CustomControls.CustomControls.CustomTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +124,28 @@
             this.panel1.Size = new System.Drawing.Size(663, 254);
             this.panel1.TabIndex = 20;
             // 
+            // customTextBox1
+            // 
+            this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.customTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
+            this.customTextBox1.BorderRadius = 15;
+            this.customTextBox1.BorderSize = 2;
+            this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.customTextBox1.Location = new System.Drawing.Point(150, 18);
+            this.customTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customTextBox1.Multiline = false;
+            this.customTextBox1.Name = "customTextBox1";
+            this.customTextBox1.Padding = new System.Windows.Forms.Padding(7);
+            this.customTextBox1.PasswordChar = false;
+            this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTextBox1.PlaceholderText = "";
+            this.customTextBox1.Size = new System.Drawing.Size(497, 37);
+            this.customTextBox1.TabIndex = 28;
+            this.customTextBox1.Texts = "";
+            this.customTextBox1.UnderlinedStyle = false;
+            // 
             // customTextBox8
             // 
             this.customTextBox8.BackColor = System.Drawing.SystemColors.Window;
@@ -137,7 +159,7 @@
             this.customTextBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customTextBox8.Multiline = false;
             this.customTextBox8.Name = "customTextBox8";
-            this.customTextBox8.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.customTextBox8.Padding = new System.Windows.Forms.Padding(7);
             this.customTextBox8.PasswordChar = false;
             this.customTextBox8.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox8.PlaceholderText = "";
@@ -159,7 +181,7 @@
             this.customTextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customTextBox7.Multiline = false;
             this.customTextBox7.Name = "customTextBox7";
-            this.customTextBox7.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.customTextBox7.Padding = new System.Windows.Forms.Padding(7);
             this.customTextBox7.PasswordChar = false;
             this.customTextBox7.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox7.PlaceholderText = "";
@@ -181,7 +203,7 @@
             this.customTextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customTextBox6.Multiline = false;
             this.customTextBox6.Name = "customTextBox6";
-            this.customTextBox6.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.customTextBox6.Padding = new System.Windows.Forms.Padding(7);
             this.customTextBox6.PasswordChar = false;
             this.customTextBox6.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox6.PlaceholderText = "";
@@ -203,7 +225,7 @@
             this.customTextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customTextBox5.Multiline = false;
             this.customTextBox5.Name = "customTextBox5";
-            this.customTextBox5.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.customTextBox5.Padding = new System.Windows.Forms.Padding(7);
             this.customTextBox5.PasswordChar = false;
             this.customTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox5.PlaceholderText = "";
@@ -275,20 +297,20 @@
             // customComboBox2
             // 
             this.customComboBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customComboBox2.BorderSize = 1;
             this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.customComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.Location = new System.Drawing.Point(170, 139);
+            this.customComboBox2.Location = new System.Drawing.Point(170, 128);
             this.customComboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customComboBox2.MinimumSize = new System.Drawing.Size(178, 24);
             this.customComboBox2.Name = "customComboBox2";
             this.customComboBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox2.Size = new System.Drawing.Size(491, 24);
+            this.customComboBox2.Size = new System.Drawing.Size(491, 36);
             this.customComboBox2.TabIndex = 30;
             this.customComboBox2.Texts = "";
             this.customComboBox2.Load += new System.EventHandler(this.customComboBox2_Load);
@@ -296,20 +318,20 @@
             // customComboBox3
             // 
             this.customComboBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox3.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customComboBox3.BorderSize = 1;
             this.customComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.customComboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox3.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.Location = new System.Drawing.Point(170, 182);
+            this.customComboBox3.Location = new System.Drawing.Point(170, 171);
             this.customComboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customComboBox3.MinimumSize = new System.Drawing.Size(178, 24);
             this.customComboBox3.Name = "customComboBox3";
             this.customComboBox3.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox3.Size = new System.Drawing.Size(490, 24);
+            this.customComboBox3.Size = new System.Drawing.Size(490, 36);
             this.customComboBox3.TabIndex = 31;
             this.customComboBox3.Texts = "";
             this.customComboBox3.Load += new System.EventHandler(this.customComboBox3_Load);
@@ -317,45 +339,23 @@
             // customComboBox4
             // 
             this.customComboBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox4.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customComboBox4.BorderSize = 1;
             this.customComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.customComboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox4.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.customComboBox4.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox4.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox4.Location = new System.Drawing.Point(170, 96);
+            this.customComboBox4.Location = new System.Drawing.Point(170, 85);
             this.customComboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customComboBox4.MinimumSize = new System.Drawing.Size(178, 24);
             this.customComboBox4.Name = "customComboBox4";
             this.customComboBox4.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox4.Size = new System.Drawing.Size(490, 24);
+            this.customComboBox4.Size = new System.Drawing.Size(490, 36);
             this.customComboBox4.TabIndex = 32;
             this.customComboBox4.Texts = "";
             this.customComboBox4.Load += new System.EventHandler(this.customComboBox4_Load);
-            // 
-            // customTextBox1
-            // 
-            this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.customTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(189)))), ((int)(((byte)(152)))));
-            this.customTextBox1.BorderRadius = 15;
-            this.customTextBox1.BorderSize = 2;
-            this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox1.Location = new System.Drawing.Point(150, 18);
-            this.customTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.customTextBox1.Multiline = false;
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.customTextBox1.PasswordChar = false;
-            this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox1.PlaceholderText = "";
-            this.customTextBox1.Size = new System.Drawing.Size(497, 37);
-            this.customTextBox1.TabIndex = 28;
-            this.customTextBox1.Texts = "";
-            this.customTextBox1.UnderlinedStyle = false;
             // 
             // ChamThi
             // 
@@ -374,7 +374,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChamThi";
             this.Text = "Ghi Nhận Chấm Thi";
             this.Load += new System.EventHandler(this.ChamThi_Load);

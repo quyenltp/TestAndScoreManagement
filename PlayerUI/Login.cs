@@ -27,13 +27,13 @@ namespace TestAndScore
         {
             if (txtUsername.Texts == "" || txtPassword.Texts == "")
             {
-                MessageBox.Show("Thông tin chưa đầy đủ!\n Vui long nhập lại thông tin!");
+                MessageBox.Show("Thông tin chưa đầy đủ!\n Vui lòng nhập lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 1)
                 {
-                    MessageBox.Show("Chào Mừng " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
+                    MessageBox.Show("Chào Mừng " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MainForm f = new MainForm();
                     f.cc(1);
                     f.phanquyen();
@@ -54,7 +54,7 @@ namespace TestAndScore
 
                 else
                 {
-                    if (MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác!\nVui lòng nhập lại thông tin?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác!\nVui lòng nhập lại thông tin?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                         txtUsername.Focus();
                     else
                     {
@@ -70,5 +70,6 @@ namespace TestAndScore
             else
                 txtPassword.PasswordChar = true;
         }
+
     }
 }

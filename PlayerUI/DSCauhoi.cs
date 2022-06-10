@@ -43,7 +43,7 @@ namespace PlayerUI
         {
             //dataGridView1.AutoGenerateColumns = false;           
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI5;Integrated Security=True";
+            con.ConnectionString = @"Data Source=LAPTOP-P3AC0C24\SQLEXPRESS;Initial Catalog=RADEVACHAMTHI;Integrated Security=True";
             con.Open();
             string sql = "select * from CAUHOI where maMH like '%" + a + "%'";
             DataSet ds = new DataSet();
@@ -59,7 +59,7 @@ namespace PlayerUI
             dong = e.RowIndex;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             if (soCau == 0)
             {
@@ -113,6 +113,67 @@ namespace PlayerUI
         {
             closed = 1;
             Close();
+        }*/
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (soCau == 0)
+            {
+                return;
+            }
+            else
+            {
+                switch (check)
+                {
+                    case 0:
+                        {
+                            CH1 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH1 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+                            check++;
+                            return;
+                        }
+                    case 1:
+                        {
+                            CH2 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH2 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+                            check++;
+                            return;
+                        }
+                    case 2:
+                        {
+                            CH3 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH3 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+                            check++;
+                            return;
+                        }
+                    case 3:
+                        {
+                            CH4 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH4 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+                            check++;
+                            return;
+                        }
+                    case 4:
+                        {
+                            CH5 = dataGridView1.Rows[dong].Cells[3].Value.ToString();
+                            mCH5 = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+                            check++;
+                            return;
+                        }
+                }
+                soCau--;
+            }
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            closed = 1;
+            Close();
+        }
+
+        private void DSCauHoi_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

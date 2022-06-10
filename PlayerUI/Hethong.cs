@@ -39,7 +39,7 @@ namespace TestAndScore
             comboBox1.Text = dataGridView1.Rows[dong].Cells[3].Value.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -86,6 +86,56 @@ namespace TestAndScore
                     MessageBox.Show("Đã xóa thành công");
                     NguoiDung_Load(sender, e);
                 }
+            }
+        }*/
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                tk.them(textBox1.Text, textBox2.Text, textBox3.Text, int.Parse(comboBox1.Text));
+                MessageBox.Show("Thêm thành công");
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                comboBox1.Text = "";
+                NguoiDung_Load(sender, e);
+            }
+            catch
+            {
+                MessageBox.Show("Đã tồn tại tài khoản");
+            }
+        }
+
+        private void customButton2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.TextLength == 0)
+                MessageBox.Show("Bạn cần chọn Tài Khoản để xóa");
+            else
+            {
+                if (DialogResult.Yes == MessageBox.Show("Bạn có chắc chắn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    tk.xoa(textBox1.Text);
+                    MessageBox.Show("Đã xóa thành công");
+                    NguoiDung_Load(sender, e);
+                }
+            }
+        }
+
+        private void customButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Bạn có muốn sửa tài khoản không", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    tk.sua(textBox1.Text, textBox2.Text, textBox3.Text);
+                    MessageBox.Show("Sửa tài khoản thành công");
+                    NguoiDung_Load(sender, e);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Thông tin không đúng\nSửa tài khoản thành công");
             }
         }
     }

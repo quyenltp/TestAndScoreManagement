@@ -89,7 +89,7 @@
             this.btnCaiDat.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnCaiDat.Size = new System.Drawing.Size(250, 45);
             this.btnCaiDat.TabIndex = 14;
-            this.btnCaiDat.Text = "Hệ thống";
+            this.btnCaiDat.Text = "Hệ Thống";
             this.btnCaiDat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCaiDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCaiDat.UseVisualStyleBackColor = true;
@@ -342,7 +342,7 @@
             this.label2.Font = new System.Drawing.Font("Cambria", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(295, 32);
+            this.label2.Size = new System.Drawing.Size(245, 26);
             this.label2.TabIndex = 0;
             this.label2.Text = "Việc Ra Đề và Chấm Thi";
             // 
@@ -353,7 +353,7 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 26);
+            this.label1.Size = new System.Drawing.Size(70, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản Lý";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -369,7 +369,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(936, 573);

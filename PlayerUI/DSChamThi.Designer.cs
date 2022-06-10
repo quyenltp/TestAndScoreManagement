@@ -46,10 +46,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
-            this.label1.Location = new System.Drawing.Point(173, 26);
+            this.label1.Location = new System.Drawing.Point(153, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(437, 55);
+            this.label1.Size = new System.Drawing.Size(364, 46);
             this.label1.TabIndex = 2;
             this.label1.Text = "Kết Quả Chấm Thi";
             // 
@@ -66,14 +66,13 @@
             this.diemthibangso,
             this.diemthibangchu,
             this.ghichu});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 88);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(746, 631);
+            this.dataGridView1.Size = new System.Drawing.Size(663, 497);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -85,17 +84,17 @@
             this.mssv.MinimumWidth = 6;
             this.mssv.Name = "mssv";
             this.mssv.ReadOnly = true;
-            this.mssv.Width = 91;
+            this.mssv.Width = 74;
             // 
             // hoten
             // 
             this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.hoten.DataPropertyName = "hoten";
-            this.hoten.HeaderText = "Họ Tên";
+            this.hoten.HeaderText = "Họ tên";
             this.hoten.MinimumWidth = 6;
             this.hoten.Name = "hoten";
             this.hoten.ReadOnly = true;
-            this.hoten.Width = 97;
+            this.hoten.Width = 75;
             // 
             // maDT
             // 
@@ -105,7 +104,7 @@
             this.maDT.MinimumWidth = 6;
             this.maDT.Name = "maDT";
             this.maDT.ReadOnly = true;
-            this.maDT.Width = 110;
+            this.maDT.Width = 90;
             // 
             // lanthi
             // 
@@ -115,7 +114,7 @@
             this.lanthi.MinimumWidth = 6;
             this.lanthi.Name = "lanthi";
             this.lanthi.ReadOnly = true;
-            this.lanthi.Width = 93;
+            this.lanthi.Width = 74;
             // 
             // diemthibangso
             // 
@@ -125,7 +124,7 @@
             this.diemthibangso.MinimumWidth = 6;
             this.diemthibangso.Name = "diemthibangso";
             this.diemthibangso.ReadOnly = true;
-            this.diemthibangso.Width = 113;
+            this.diemthibangso.Width = 93;
             // 
             // diemthibangchu
             // 
@@ -135,6 +134,7 @@
             this.diemthibangchu.MinimumWidth = 6;
             this.diemthibangchu.Name = "diemthibangchu";
             this.diemthibangchu.ReadOnly = true;
+            this.diemthibangchu.Width = 99;
             // 
             // ghichu
             // 
@@ -147,13 +147,12 @@
             // 
             // DSChamThi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(773, 719);
+            this.ClientSize = new System.Drawing.Size(687, 575);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DSChamThi";
             this.Text = "DSChamThi";
             this.Load += new System.EventHandler(this.DSChamThi_Load);
