@@ -17,7 +17,7 @@ namespace TestAndScore
         {
             dataGridView1.AutoGenerateColumns = false;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=LAPTOP-OR960A4M;Initial Catalog=test;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI5;Integrated Security=True";
             con.Open();
             string sql = "SELECT * FROM KETQUATHI FULL OUTER JOIN THISINH ON KETQUATHI.mssv = THISINH.mssv";
             DataSet ds = new DataSet();

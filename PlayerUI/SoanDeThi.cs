@@ -130,30 +130,52 @@ namespace TestAndScore
         private string Helpme(int i)
         {
             string a = "";
+            int check = 0;
             if(i == 1)
             {
                 return dsCauhoi.mCH1;
             }
             if (i == 2)
             {
+                if(dsCauhoi.mCH2 == dsCauhoi.mCH1)
+                {
+                    check = 1;
+                    return a;
+                }
                 return dsCauhoi.mCH2;
             }
             if (i == 3)
             {
+                if ((dsCauhoi.mCH3 == dsCauhoi.mCH2)||(dsCauhoi.mCH3 == dsCauhoi.mCH1))
+                {
+                    check = 1;
+                    return a;
+                }
                 return dsCauhoi.mCH3;
             }
             if (i == 4)
             {
+                if ((dsCauhoi.mCH4 == dsCauhoi.mCH3) || (dsCauhoi.mCH4 == dsCauhoi.mCH1)||(dsCauhoi.mCH4 == dsCauhoi.mCH2))
+                {
+                    check = 1;
+                    return a;
+                }
                 return dsCauhoi.mCH4;
             }
             if (i == 5)
             {
+                if ((dsCauhoi.mCH5 == dsCauhoi.mCH2) || (dsCauhoi.mCH5 == dsCauhoi.mCH1)|| (dsCauhoi.mCH5 == dsCauhoi.mCH3) || (dsCauhoi.mCH5 == dsCauhoi.mCH4))
+                {
+                    check = 1;
+                    return a;
+                }
                 return dsCauhoi.mCH5;
-            }
+            }            
             return a;
         }
         private void btnLuuDeThi_Click(object sender, EventArgs e)
         {
+            int a = 0;
             if((customComboBox1.Texts =="")||(comboBoxHinhThucThi.Texts == "") ||(comboBoxHocKy.Texts == "") ||(comboBoxLanThi.Texts == "") ||(txtNamHoc.Texts == "")||(txtThoiLuong.Texts == ""))
             {
                 MessageBox.Show("Cần nhập thông tin đầy đủ");
@@ -184,14 +206,29 @@ namespace TestAndScore
                 MessageBox.Show("Chưa chọn đủ câu hỏi");
                 return;
             }
-                try
+            try
             {
-                dt.them(taoMaDT(),customComboBox1.Texts, comboBoxHinhThucThi.Texts, comboBoxHocKy.Texts, Int32.Parse(txtNamHoc.Texts), Int32.Parse(txtThoiLuong.Texts), Int32.Parse(comboBoxLanThi.Texts), dateTimePicker1.Value);
+                dt.them(taoMaDT(), customComboBox1.Texts, comboBoxHinhThucThi.Texts, comboBoxHocKy.Texts, Int32.Parse(txtNamHoc.Texts), Int32.Parse(txtThoiLuong.Texts), Int32.Parse(comboBoxLanThi.Texts), dateTimePicker1.Value);
                 for (int i = 0; i < Int32.Parse(comboBoxLanThi.Texts); i++)
                 {
-                    dt.themChitietde(taoMaDT(), Helpme(i+1), i + 1);
-                        }
+                    if (Helpme(i + 1) == "")
+                    {
+                        a = 1;
+                    }
+                }
+                if (a == 0)
+                {
+                    for (int i = 0; i < Int32.Parse(comboBoxLanThi.Texts); i++)
+                    {
+
+                        dt.themChitietde(taoMaDT(), Helpme(i + 1), i + 1);
+                    }
                     MessageBox.Show("Thêm đề thi mới thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Có câu hỏi bị trùng.");
+                }
             }
             catch
             {

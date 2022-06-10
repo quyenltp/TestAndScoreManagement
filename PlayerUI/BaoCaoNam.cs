@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestAndScore.Data;
 
 namespace TestAndScore
 {
     public partial class BaoCaoNam : Form
     {
+        Dethi dethi = new Dethi();
         public BaoCaoNam()
         {
             InitializeComponent();
@@ -21,6 +23,8 @@ namespace TestAndScore
 
         private void BaoCaoNam_Load(object sender, EventArgs e)
         {
+            label3.Visible = false;
+            label4.Visible = false;
             int current_year = DateTime.Now.Year;
             for (int i = 1; i <= 70; ++i)
             {
@@ -36,7 +40,7 @@ namespace TestAndScore
             }
             else
             {
-
+                label3.Text = dethi.hienthi().Columns.Count.ToString();
             }
         }
     }

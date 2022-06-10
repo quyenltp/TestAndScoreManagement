@@ -41,7 +41,6 @@ namespace TestAndScore
         public void cc(int a)
             {
             check = a;
-            MessageBox.Show(check.ToString());
             }
 
         public void phanquyen()

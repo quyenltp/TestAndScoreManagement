@@ -17,6 +17,8 @@ namespace TestAndScore.Data
             return da.GET(sql);
         }
 
+
+
         public DataTable timmaMonhoc(string dk)
         {
             string sql = "select * from MONTHI where tenMH like '%" + dk + "%'";
