@@ -12,7 +12,7 @@ namespace TestAndScore.Data
     {
         public SqlConnection connect()
         {
-            return new SqlConnection(@"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI5;Integrated Security=True");
+            return new SqlConnection(@"Data Source=THAO-HUYNH;Initial Catalog=RADEVACHAMTHI;Integrated Security=True");
         }
         public DataTable GET(string sql)
         {
@@ -21,9 +21,9 @@ namespace TestAndScore.Data
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
             DataTable dt = new DataTable();
             da.Fill(dt);
+            con.Close();
             return dt;
         }
-
         public DataSet GET2(string sql)
         {
             SqlConnection con = connect();
@@ -31,6 +31,7 @@ namespace TestAndScore.Data
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
             DataSet dt = new DataSet();
             da.Fill(dt);
+            con.Close();
             return dt;
         }
         public void AC(string sql)
@@ -41,6 +42,7 @@ namespace TestAndScore.Data
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
             cmd.Dispose();
+            con.Close();
         }
         
     }

@@ -42,6 +42,17 @@ namespace TestAndScore.Data
                 return 0;
             }
         }
+
+        public String Ma_Nguoi_Dung(string ten_dang_nhap)
+        {
+            string sql = "SELECT manguoidung FROM dbo.NGUOIDUNG WHERE tendangnhap = '" + ten_dang_nhap + "'";
+            return da.GET(sql).Rows[0][0].ToString();
+        }
+        public String Ten_Nguoi_Dung(string ma_nguoi_dung)
+        {
+            string sql = "SELECT tenGv FROM dbo.GIANGVIEN WHERE maGV = '" + ma_nguoi_dung + "'";
+            return da.GET(sql).Rows[0][0].ToString();
+        }
         public void them(string tentk,string mk,string tendung,int loai)
         {
             string sql = "insert into NGUOIDUNG values(N'" + tentk + "','" + mk + "',N'" + tendung + "','" + loai + "') ";

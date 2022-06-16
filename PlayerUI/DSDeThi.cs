@@ -50,13 +50,13 @@ namespace TestAndScore
         {
             if (radioButton_Tat_Ca.Checked == true)
             {
-                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiTatCa();
+                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiTatCa().Tables[0];
             }
             else
             {
                 dieukien = "";
                 Duyet_Dieu_Kien();
-                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiChonLoc(dieukien);
+                dataGridView_Danh_Sach_De_Thi.DataSource = a.HienThiChonLoc(dieukien).Tables[0];
             }
 
 

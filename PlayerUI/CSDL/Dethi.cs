@@ -4,7 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using TestAndScore.Data;
 
 namespace TestAndScore.Data
 {
@@ -16,8 +15,6 @@ namespace TestAndScore.Data
             string sql = "select * from DETHI ";
             return da.GET(sql);
         }
-
-
 
         public DataTable timmaMonhoc(string dk)
         {
@@ -47,18 +44,18 @@ namespace TestAndScore.Data
             return da.GET(sql);
         }
 
-        public DataTable HienThiTatCa()
+        public DataSet HienThiTatCa()
         {
             string sql = "SELECT maDT as N'Mã đề thi', maMH as N'Mã môn học', hinhthuc as N'Hình thức thi',hocki as N'Học kỳ', namhoc as N'Năm học', thoiluong as N'Thời lượng', socauhoi as N'Số câu hỏi', ngaythi as N'Ngày thi' FROM DBO.DETHI ORDER BY ngaythi";
-            return da.GET(sql);
+            return da.GET2(sql);
         }
-        public DataTable HienThiChonLoc(string dk)
+        public DataSet HienThiChonLoc(string dk)
         {
             string sql = "SELECT maDT as N'Mã đề thi'," +
                 " maMH as N'Mã môn học', hinhthuc as N'Hình thức thi',hocki as N'Học kỳ '," +
                 " namhoc as N'Năm học', thoiluong as N'Thời lượng', socauhoi as N'Số câu hỏi'," +
                 " ngaythi as N'Ngày thi' FROM DBO.DETHI " + ((dk == "")? "":("WHERE " + dk));
-            return da.GET(sql);
+            return da.GET2(sql);
         }
     }
 }

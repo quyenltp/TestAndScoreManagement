@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,9 @@ namespace TestAndScore
         public BaoCaoNam()
         {
             InitializeComponent();
+            lb_Name.Text = new TaiKhoan().Ten_Nguoi_Dung(new Login().Get_Ma_Nguoi_Dung());
         }
+
         int han_muc_nam;
         int nam_bao_cao;
         int tong_de, tong_cham;
@@ -30,17 +33,13 @@ namespace TestAndScore
             {
                 cbx_Nam.Items.Add((current_year - i).ToString() + " - " + (current_year - i + 1).ToString());
             }
+            cbx_Nam.SelectedIndex = 0;
         }
 
         bool check_request;
+
         private void btnTraCuu_Click(object sender, EventArgs e)
         {
-            if (cbx_Nam.Text == "")
-            {
-                MessageBox.Show("Vui lòng chọn năm báo cáo!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            }
-            else
-            {
                 if (cbx_Nam.SelectedIndex == 0)
                 {
                     if (MessageBox.Show("Bạn chắc chắn đã tổng kết năm học " + cbx_Nam.Items[0].ToString() + " và thực hiện lập báo cáo?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
@@ -90,7 +89,6 @@ namespace TestAndScore
 
                 dataGridViewBaoCaoNam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridViewBaoCaoNam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            }
         }
     }
 }

@@ -16,7 +16,11 @@ namespace TestAndScore
 
         TaiKhoan tk = new TaiKhoan();
         public static int loaitk;
-        public static string matk;
+        public static string ma_nguoi_dung;
+        public string Get_Ma_Nguoi_Dung()
+        {
+            return ma_nguoi_dung;
+        }
         public Login()
         {
             InitializeComponent();
@@ -33,6 +37,7 @@ namespace TestAndScore
             {
                 if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 1)
                 {
+                    ma_nguoi_dung = new TaiKhoan().Ma_Nguoi_Dung(txtUsername.Texts);
                     MessageBox.Show("Chào Mừng " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MainForm f = new MainForm();
                     f.cc(1);
@@ -44,6 +49,7 @@ namespace TestAndScore
 
                 else if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 2)
                 {
+                    ma_nguoi_dung = new TaiKhoan().Ma_Nguoi_Dung(txtUsername.Texts);
                     MessageBox.Show("Chào Mừng == " + txtUsername.Texts + "== Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
                     MainForm f = new MainForm();
                     f.cc(2);

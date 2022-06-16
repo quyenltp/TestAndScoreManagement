@@ -17,7 +17,7 @@ namespace TestAndScore
         {
             dataGridView1.AutoGenerateColumns = false;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI5;Integrated Security=True";
+            con.ConnectionString = @"Data Source=THAO-HUYNH;Initial Catalog=RADEVACHAMTHI;Integrated Security=True";
             con.Open();
             string sql = "SELECT * FROM KETQUATHI FULL OUTER JOIN THISINH ON KETQUATHI.mssv = THISINH.mssv";
             DataSet ds = new DataSet();
@@ -25,11 +25,6 @@ namespace TestAndScore
             adapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
             dataGridView1.Refresh();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
