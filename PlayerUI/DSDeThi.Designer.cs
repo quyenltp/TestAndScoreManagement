@@ -110,7 +110,7 @@
             this.dtPicker_Ngay_Thi.Location = new System.Drawing.Point(312, 104);
             this.dtPicker_Ngay_Thi.MinimumSize = new System.Drawing.Size(4, 35);
             this.dtPicker_Ngay_Thi.Name = "dtPicker_Ngay_Thi";
-            this.dtPicker_Ngay_Thi.Size = new System.Drawing.Size(206, 35);
+            this.dtPicker_Ngay_Thi.Size = new System.Drawing.Size(225, 35);
             this.dtPicker_Ngay_Thi.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.dtPicker_Ngay_Thi.TabIndex = 6;
             this.dtPicker_Ngay_Thi.TextColor = System.Drawing.Color.White;
@@ -252,7 +252,7 @@
             // checkBox_Lich
             // 
             this.checkBox_Lich.AutoSize = true;
-            this.checkBox_Lich.Location = new System.Drawing.Point(524, 113);
+            this.checkBox_Lich.Location = new System.Drawing.Point(552, 115);
             this.checkBox_Lich.Name = "checkBox_Lich";
             this.checkBox_Lich.Size = new System.Drawing.Size(83, 20);
             this.checkBox_Lich.TabIndex = 20;

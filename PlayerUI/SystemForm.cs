@@ -19,14 +19,14 @@ namespace TestAndScore
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void customButton1_Click(object sender, EventArgs e)
         {
             NguoiDung nd = new NguoiDung();
-           
             nd.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void customButton2_Click(object sender, EventArgs e)
         {
             QuanLyCauHoi ql = new QuanLyCauHoi();
             ql.Show();

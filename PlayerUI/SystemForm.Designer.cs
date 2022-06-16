@@ -29,60 +29,59 @@ namespace TestAndScore
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.customButton1 = new CustomControls.CustomControls.CustomButton();
+            this.customButton2 = new CustomControls.CustomControls.CustomButton();
             this.SuspendLayout();
             // 
-            // button1
+            // customButton1
             // 
-            this.button1.Location = new System.Drawing.Point(133, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Quản lý tài khoản";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButton1.BorderRadius = 15;
+            this.customButton1.BorderSize = 0;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(237, 178);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(200, 72);
+            this.customButton1.TabIndex = 2;
+            this.customButton1.Text = "Quản lý tài khoản";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
-            // button2
+            // customButton2
             // 
-            this.button2.Location = new System.Drawing.Point(481, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 68);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Quản lý câu hỏi";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(133, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 68);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(481, 309);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.customButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
+            this.customButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButton2.BorderRadius = 15;
+            this.customButton2.BorderSize = 0;
+            this.customButton2.FlatAppearance.BorderSize = 0;
+            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.customButton2.ForeColor = System.Drawing.Color.White;
+            this.customButton2.Location = new System.Drawing.Point(237, 282);
+            this.customButton2.Name = "customButton2";
+            this.customButton2.Size = new System.Drawing.Size(200, 72);
+            this.customButton2.TabIndex = 3;
+            this.customButton2.Text = "Quản lý câu hỏi";
+            this.customButton2.TextColor = System.Drawing.Color.White;
+            this.customButton2.UseVisualStyleBackColor = false;
+            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
             // 
             // SystemForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(255)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(773, 719);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(687, 575);
+            this.Controls.Add(this.customButton2);
+            this.Controls.Add(this.customButton1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SystemForm";
             this.Text = "SystemForm";
             this.ResumeLayout(false);
@@ -91,9 +90,7 @@ namespace TestAndScore
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private CustomControls.CustomControls.CustomButton customButton1;
+        private CustomControls.CustomControls.CustomButton customButton2;
     }
 }
