@@ -17,7 +17,7 @@ namespace TestAndScore
         public BaoCaoNam()
         {
             InitializeComponent();
-            lb_Name.Text = new TaiKhoan().Ten_Nguoi_Dung(new Login().Get_Ma_Nguoi_Dung());
+            //lb_Name.Text = new TaiKhoan().Ten_Nguoi_Dung(new Login().Get_Ma_Nguoi_Dung());
         }
 
         int han_muc_nam;

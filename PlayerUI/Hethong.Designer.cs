@@ -36,10 +36,10 @@ namespace TestAndScore
             this.customButton3 = new CustomControls.CustomControls.CustomButton();
             this.customButton2 = new CustomControls.CustomControls.CustomButton();
             this.customButton1 = new CustomControls.CustomControls.CustomButton();
-<<<<<<< HEAD
+/*<<<<<<< HEAD
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-=======
+=======*/
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox3 = new CustomControls.CustomControls.CustomTextBox();
             this.textBox2 = new CustomControls.CustomControls.CustomTextBox();
@@ -49,7 +49,7 @@ namespace TestAndScore
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,7 +78,7 @@ namespace TestAndScore
             this.TieuDe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.TieuDe.Location = new System.Drawing.Point(358, 9);
             this.TieuDe.Name = "TieuDe";
-<<<<<<< HEAD
+/*<<<<<<< HEAD
             this.TieuDe.Size = new System.Drawing.Size(417, 79);
             this.TieuDe.TabIndex = 1;
             this.TieuDe.Text = "Quản lý tài khoản";
@@ -177,12 +177,12 @@ namespace TestAndScore
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 9;
             // 
-=======
+=======*/
             this.TieuDe.Size = new System.Drawing.Size(580, 63);
             this.TieuDe.TabIndex = 1;
             this.TieuDe.Text = "Quản lý tài khoản";
             // 
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
             // panel2
             // 
             this.panel2.Controls.Add(this.customButton3);
@@ -254,14 +254,14 @@ namespace TestAndScore
             this.customButton1.UseVisualStyleBackColor = false;
             this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
-<<<<<<< HEAD
+/*<<<<<<< HEAD
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(191, 290);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(120, 26);
             this.textBox4.TabIndex = 7;
-=======
+=======*/
             // panel3
             // 
             this.panel3.Controls.Add(this.comboBox1);
@@ -343,19 +343,19 @@ namespace TestAndScore
             this.textBox1.TabIndex = 6;
             this.textBox1.Texts = "";
             this.textBox1.UnderlinedStyle = false;
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-<<<<<<< HEAD
+/*<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(186, 260);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 26);
             this.label1.TabIndex = 13;
             this.label1.Text = "Mã người dùng:";
-=======
+=======*/
             this.label1.Location = new System.Drawing.Point(9, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 22);
@@ -402,7 +402,7 @@ namespace TestAndScore
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(125, 24);
             this.comboBox1.TabIndex = 9;
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
             // 
             // NguoiDung
             // 
@@ -436,13 +436,13 @@ namespace TestAndScore
         private CustomControls.CustomControls.CustomButton customButton3;
         private CustomControls.CustomControls.CustomButton customButton2;
         private CustomControls.CustomControls.CustomButton customButton1;
-<<<<<<< HEAD
+/*<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox4;
-=======
+=======*/
         private System.Windows.Forms.Panel panel3;
         private CustomControls.CustomControls.CustomTextBox textBox3;
         private CustomControls.CustomControls.CustomTextBox textBox2;
@@ -452,6 +452,6 @@ namespace TestAndScore
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox1;
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
     }
 }

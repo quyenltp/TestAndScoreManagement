@@ -52,14 +52,11 @@ namespace TestAndScore
             // 
             // TieuDe
             // 
-<<<<<<< HEAD
-            this.TieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TieuDe.Location = new System.Drawing.Point(43, 15);
-=======
+
             this.TieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.TieuDe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(162)))), ((int)(((byte)(93)))));
             this.TieuDe.Location = new System.Drawing.Point(381, 9);
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
             this.TieuDe.Name = "TieuDe";
             this.TieuDe.Size = new System.Drawing.Size(534, 63);
             this.TieuDe.TabIndex = 9;

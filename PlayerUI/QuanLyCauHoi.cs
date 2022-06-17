@@ -78,11 +78,9 @@ namespace TestAndScore
             {
                 if (MessageBox.Show("Bạn có muốn sửa tài khoản không", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-<<<<<<< HEAD
-                    tk.sua(textBox1.Text, textBox2.Text, textBox3.Text, richTextBox1.Text);
-=======
-                    tk.sua(textBox1.Texts, textBox2.Texts, textBox3.Texts);
->>>>>>> 07880e5d68c4b13ac0667928e256ec7b90f27273
+
+                    tk.sua(textBox1.Texts, textBox2.Texts, textBox3.Texts, textBox4.Texts);
+
                     MessageBox.Show("Sửa tài khoản thành công");
                     NguoiDung_Load(sender, e);
                 }

@@ -35,13 +35,6 @@ namespace TestAndScore
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             int dong = e.RowIndex;
-<<<<<<< HEAD
-            textBox1.Text = dataGridView1.Rows[dong].Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.Rows[dong].Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.Rows[dong].Cells[2].Value.ToString();
-            textBox4.Text = dataGridView1.Rows[dong].Cells[3].Value.ToString();
-            comboBox1.Text = dataGridView1.Rows[dong].Cells[4].Value.ToString();
-=======
             textBox1.Texts = dataGridView1.Rows[dong].Cells[0].Value.ToString();
             textBox2.Texts = dataGridView1.Rows[dong].Cells[1].Value.ToString();
             textBox3.Texts = dataGridView1.Rows[dong].Cells[2].Value.ToString();
@@ -102,7 +95,7 @@ namespace TestAndScore
         {
             try
             {
-                tk.them(textBox1.Text, textBox2.Text, textBox3.Text, int.Parse(comboBox1.Text));
+                tk.them(textBox1.Texts, textBox2.Texts, textBox3.Texts,"", int.Parse(comboBox1.Text));
                 MessageBox.Show("Thêm thành công");
                 textBox1.Texts = "";
                 textBox2.Texts = "";
@@ -137,7 +130,7 @@ namespace TestAndScore
             {
                 if (MessageBox.Show("Bạn có muốn sửa tài khoản không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    tk.sua(textBox1.Text, textBox2.Text, textBox3.Text, int.Parse(comboBox1.Text));
+                    tk.sua(textBox1.Text, textBox2.Text, textBox3.Text,"", int.Parse(comboBox1.Text));
                     MessageBox.Show("Sửa tài khoản thành công");
                     NguoiDung_Load(sender, e);
                 }

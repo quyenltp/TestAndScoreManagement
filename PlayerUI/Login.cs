@@ -37,7 +37,7 @@ namespace TestAndScore
             {
                 if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 1)
                 {
-                    ma_nguoi_dung = new TaiKhoan().Ma_Nguoi_Dung(txtUsername.Texts);
+                    //ma_nguoi_dung = new TaiKhoan().Ma_Nguoi_Dung(txtUsername.Texts);
                     MessageBox.Show("Chào Mừng " + txtUsername.Texts + " Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MainForm f = new MainForm();
                     f.cc(1);
@@ -49,7 +49,7 @@ namespace TestAndScore
 
                 else if (tk.timkiem(txtUsername.Texts, txtPassword.Texts) == 2)
                 {
-                    ma_nguoi_dung = new TaiKhoan().Ma_Nguoi_Dung(txtUsername.Texts);
+                    //ma_nguoi_dung = new TaiKhoan().Ma_Nguoi_Dung(txtUsername.Texts);
                     MessageBox.Show("Chào Mừng == " + txtUsername.Texts + "== Đã Đến Với Phần Mềm Quản Lý Thi Và Chấm Thi");
                     MainForm f = new MainForm();
                     f.cc(2);
