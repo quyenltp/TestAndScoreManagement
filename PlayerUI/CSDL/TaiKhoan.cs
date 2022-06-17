@@ -16,7 +16,7 @@ namespace TestAndScore.Data
 
         public DataTable hienthi()
         {
-            string sql = "SELECT tendangnhap as N'Tên đăng nhập', matkhau as N'Mật khẩu', tennguoidung as N'Tên người dùng',loaitaikhoan as N'Phân quyền' FROM DBO.NGUOIDUNG ORDER BY tendangnhap";
+            string sql = "SELECT tendangnhap as N'Tên đăng nhập', matkhau as N'Mật khẩu', tennguoidung as N'Tên người dùng',manguoidung as N'Mã người dùng',loaitaikhoan as N'Phân quyền' FROM DBO.NGUOIDUNG ORDER BY tendangnhap";
             return da.GET(sql);
         }
         public DataTable hienthi(string tentk)
@@ -42,25 +42,14 @@ namespace TestAndScore.Data
                 return 0;
             }
         }
-
-        public String Ma_Nguoi_Dung(string ten_dang_nhap)
+        public void them(string tentk,string mk,string tendung,string maND,int loai)
         {
-            string sql = "SELECT manguoidung FROM dbo.NGUOIDUNG WHERE tendangnhap = '" + ten_dang_nhap + "'";
-            return da.GET(sql).Rows[0][0].ToString();
-        }
-        public String Ten_Nguoi_Dung(string ma_nguoi_dung)
-        {
-            string sql = "SELECT tenGv FROM dbo.GIANGVIEN WHERE maGV = '" + ma_nguoi_dung + "'";
-            return da.GET(sql).Rows[0][0].ToString();
-        }
-        public void them(string tentk,string mk,string tendung,int loai)
-        {
-            string sql = "insert into NGUOIDUNG values(N'" + tentk + "','" + mk + "',N'" + tendung + "','" + loai + "') ";
+            string sql = "insert into NGUOIDUNG values(N'" + tentk + "','" + mk + "',N'" + tendung + "',N'" + maND + "','" + loai + "') ";
             da.AC(sql);
         }
-        public void sua(string tentk, string mk,string tennguoidung, int i)
+        public void sua(string tentk, string mk,string tennguoidung,string maND, int i)
         {
-            string sql = "update NGUOIDUNG set matkhau='" + mk + "', loaitaikhoan= '" + i + "',tennguoidung=N'" + tennguoidung + "' where tendangnhap='" + tentk + "'";
+            string sql = "update NGUOIDUNG set matkhau='" + mk + "', loaitaikhoan= '" + i + "',manguoidung= '"+ tennguoidung +"',tennguoidung=N'" + tennguoidung + "' where tendangnhap='" + tentk + "'";
             da.AC(sql);
         }
         public void xoa(string tentk)

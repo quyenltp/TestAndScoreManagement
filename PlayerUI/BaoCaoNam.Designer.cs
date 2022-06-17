@@ -92,12 +92,15 @@
             // 
             // dataGridViewBaoCaoNam
             // 
+            this.dataGridViewBaoCaoNam.AllowUserToAddRows = false;
+            this.dataGridViewBaoCaoNam.AllowUserToDeleteRows = false;
             this.dataGridViewBaoCaoNam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBaoCaoNam.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewBaoCaoNam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBaoCaoNam.Location = new System.Drawing.Point(10, 196);
             this.dataGridViewBaoCaoNam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridViewBaoCaoNam.Name = "dataGridViewBaoCaoNam";
+            this.dataGridViewBaoCaoNam.ReadOnly = true;
             this.dataGridViewBaoCaoNam.RowHeadersVisible = false;
             this.dataGridViewBaoCaoNam.RowHeadersWidth = 51;
             this.dataGridViewBaoCaoNam.RowTemplate.Height = 24;

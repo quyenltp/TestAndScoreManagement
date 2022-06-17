@@ -18,7 +18,7 @@ namespace TestAndScore.Data
             }
             public DataTable timkiem(string dk)
             {
-                string sql = "select * from CAUHOI where malop like '%" + dk + "%'";
+                string sql = "select * from CAUHOI where maMH like '%" + dk + "%'";
                 return da.GET(sql);
             }
             public DataTable mamonhoc()
@@ -38,14 +38,14 @@ namespace TestAndScore.Data
                 string sql = "insert into CAUHOI values('" + maCH + "','" + mamon + "',N'" + dokho + "',N'" + noidung + "') ";
                 da.AC(sql);
             }
-            public void sua(string malop, string tenlop, string siso)
+            public void sua(string maCH, string maMH, string dokho,string noidung)
             {
-                string sql = "update CAUHOI set tenlop='" + tenlop + "',siso=N'" + siso + "' where malop='" + malop + "'";
+                string sql = "update CAUHOI set maMH='" + maMH + "',dokho=N'" + dokho + "',noidung=N'" + noidung + "' where ma_cau_hoi='" + maCH + "'";
                 da.AC(sql);
             }
             public void xoa(string malop)
             {
-                string sql = "delete from CAUHOI where malop='" + malop + "'";
+                string sql = "delete from CAUHOI where ma_cau_hoi='" + malop + "'";
                 da.AC(sql);
             }
         }
