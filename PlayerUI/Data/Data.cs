@@ -12,7 +12,7 @@ namespace TestAndScore.Data
     {
         public SqlConnection connect()
         {
-            return new SqlConnection(@"Data Source=THAO-HUYNH;Initial Catalog=RADEVACHAMTHI;Integrated Security=True");
+            return new SqlConnection(@"Data Source=DESKTOP-PUO8CB7\MINHPHAM;Initial Catalog=RADEVACHAMTHI_;Integrated Security=True");
         }
         public DataTable GET(string sql)
         {
